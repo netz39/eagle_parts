@@ -55,6 +55,9 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>Netz39 EagleParts
+
+Library of parts for projects, which are not in the standard libraries of eagle.</description>
 <packages>
 <package name="RELAIS">
 <wire x1="-7.62" y1="5.08" x2="0" y2="5.08" width="0.127" layer="21"/>
@@ -122,93 +125,68 @@
 <wire x1="-15.24" y1="15.24" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
 </symbol>
 <symbol name="JS_05_N_K">
-<wire x1="0" y1="0" x2="0" y2="12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
-<wire x1="5.08" y1="12.7" x2="33.02" y2="12.7" width="0.254" layer="94"/>
-<wire x1="33.02" y1="12.7" x2="33.02" y2="0" width="0.254" layer="94"/>
-<wire x1="33.02" y1="0" x2="30.48" y2="0" width="0.254" layer="94"/>
-<wire x1="30.48" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
-<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="0" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="12.7" width="0.254" layer="94"/>
-<wire x1="5.08" y1="12.7" x2="25.4" y2="12.7" width="0.254" layer="94"/>
-<wire x1="25.4" y1="12.7" x2="25.4" y2="10.16" width="0.254" layer="94"/>
-<wire x1="25.4" y1="10.16" x2="27.94" y2="10.16" width="0.254" layer="94"/>
-<wire x1="27.94" y1="10.16" x2="27.94" y2="5.08" width="0.254" layer="94"/>
-<wire x1="30.48" y1="0" x2="30.48" y2="5.08" width="0.254" layer="94"/>
-<wire x1="22.86" y1="0" x2="22.86" y2="5.08" width="0.254" layer="94"/>
-<pin name="P$1" x="5.08" y="-5.08" length="middle" rot="R90"/>
-<pin name="P$2" x="5.08" y="17.78" length="middle" rot="R270"/>
-<pin name="P$3" x="25.4" y="17.78" length="middle" rot="R270"/>
-<pin name="P$4" x="22.86" y="-5.08" length="middle" rot="R90"/>
-<pin name="P$5" x="30.48" y="-5.08" length="middle" rot="R90"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="0" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="-10.16" length="middle" rot="R90"/>
+<pin name="P$2" x="-7.62" y="12.7" length="middle" rot="R270"/>
+<pin name="P$3" x="5.08" y="12.7" length="middle" rot="R270"/>
+<pin name="P$4" x="2.54" y="-10.16" length="middle" rot="R90"/>
+<pin name="P$5" x="10.16" y="-10.16" length="middle" rot="R90"/>
 </symbol>
 <symbol name="JS_05_MN_KT">
-<wire x1="0" y1="0" x2="0" y2="12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
-<wire x1="5.08" y1="12.7" x2="33.02" y2="12.7" width="0.254" layer="94"/>
-<wire x1="33.02" y1="12.7" x2="33.02" y2="0" width="0.254" layer="94"/>
-<wire x1="33.02" y1="0" x2="30.48" y2="0" width="0.254" layer="94"/>
-<wire x1="30.48" y1="0" x2="22.86" y2="0" width="0.254" layer="94"/>
-<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="0" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="12.7" width="0.254" layer="94"/>
-<wire x1="5.08" y1="12.7" x2="25.4" y2="12.7" width="0.254" layer="94"/>
-<wire x1="25.4" y1="12.7" x2="25.4" y2="10.16" width="0.254" layer="94"/>
-<wire x1="25.4" y1="10.16" x2="27.94" y2="10.16" width="0.254" layer="94"/>
-<wire x1="27.94" y1="10.16" x2="27.94" y2="5.08" width="0.254" layer="94"/>
-<wire x1="30.48" y1="0" x2="30.48" y2="5.08" width="0.254" layer="94"/>
-<pin name="P$1" x="5.08" y="-5.08" length="middle" rot="R90"/>
-<pin name="P$2" x="5.08" y="17.78" length="middle" rot="R270"/>
-<pin name="P$3" x="25.4" y="17.78" length="middle" rot="R270"/>
-<pin name="P$4" x="30.48" y="-5.08" length="middle" rot="R90"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
+<pin name="P$1" x="-7.62" y="-10.16" length="middle" rot="R90"/>
+<pin name="P$2" x="-7.62" y="12.7" length="middle" rot="R270"/>
+<pin name="P$3" x="5.08" y="12.7" length="middle" rot="R270"/>
+<pin name="P$4" x="10.16" y="-10.16" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RELAIS">
-<gates>
-<gate name="G$1" symbol="RELAIS" x="15.24" y="-5.08"/>
-</gates>
-<devices>
-<device name="" package="RELAIS">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="JS_05_N_K">
 <description>Schaltrelais JK 05 N K
 
 http://www.reichelt.de/Print-Steckrelais/JS-05-N-K/3//index.html?ACTION=3&amp;GROUPID=3293&amp;ARTICLE=79414&amp;SHOW=1&amp;START=0&amp;OFFSET=16&amp;</description>
 <gates>
-<gate name="G$1" symbol="RELAIS" x="25.4" y="-2.54"/>
+<gate name="G$1" symbol="JS_05_N_K" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="JS_05_N_K">
@@ -226,6 +204,9 @@ http://www.reichelt.de/Print-Steckrelais/JS-05-N-K/3//index.html?ACTION=3&amp;GR
 </devices>
 </deviceset>
 <deviceset name="JS_05_MN_KT">
+<description>Schaltrelais JK 05 MN KT
+
+http://www.reichelt.de/Print-Steckrelais/JS-05-MN-KT/3/index.html?;ACTION=3;LA=446;ARTICLE=79417;GROUPID=3293;artnr=JS+05+MN+KT;SID=12UB1s2H8AAAIAACOTJVc2a4e49fe1644fcd32ae1d6e6d3015b7c</description>
 <gates>
 <gate name="G$1" symbol="JS_05_MN_KT" x="0" y="0"/>
 </gates>
