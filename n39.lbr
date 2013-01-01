@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -78,31 +78,33 @@
 <pad name="P$4" x="26" y="1" drill="0.8"/>
 </package>
 <package name="WAGO_734_262">
-<pad name="P$1" x="-1.95" y="-5.25" drill="0.8"/>
-<pad name="P$2" x="1.95" y="-5.25" drill="0.8"/>
+<pad name="P$1" x="-1.95" y="-5.25" drill="1.5"/>
+<pad name="P$2" x="1.95" y="-5.25" drill="1.5"/>
 <wire x1="-5" y1="-5.25" x2="-5" y2="5.25" width="0.127" layer="21"/>
 <wire x1="-5" y1="5.25" x2="5" y2="5.25" width="0.127" layer="21"/>
 <wire x1="-5" y1="-5.25" x2="5" y2="-5.25" width="0.127" layer="21"/>
 <wire x1="5" y1="-5.25" x2="5" y2="5.25" width="0.127" layer="21"/>
 </package>
 <package name="WAGO_734_263">
-<pad name="P$1" x="-3.81" y="-5.25" drill="0.8"/>
-<pad name="P$2" x="0" y="-5.25" drill="0.8"/>
-<pad name="P$3" x="3.81" y="-5.25" drill="0.8"/>
+<pad name="P$1" x="-3.81" y="-5.25" drill="1.5"/>
+<pad name="P$2" x="0" y="-5.25" drill="1.5"/>
+<pad name="P$3" x="3.81" y="-5.25" drill="1.5"/>
 <wire x1="-8.15" y1="5.25" x2="-8.15" y2="-5.25" width="0.127" layer="21"/>
 <wire x1="-8.15" y1="-5.25" x2="8.15" y2="-5.25" width="0.127" layer="21"/>
 <wire x1="8.15" y1="-5.25" x2="8.15" y2="5.25" width="0.127" layer="21"/>
 <wire x1="8.15" y1="5.25" x2="-8.15" y2="5.25" width="0.127" layer="21"/>
 </package>
 <package name="PSW_5">
-<pad name="P$1" x="-3.81" y="-2.54" drill="0.8"/>
-<pad name="P$2" x="-1.27" y="-2.54" drill="0.8"/>
-<pad name="P$3" x="1.27" y="-2.54" drill="0.8"/>
-<pad name="P$4" x="3.81" y="-2.54" drill="0.8"/>
-<wire x1="-6.35" y1="-1.27" x2="6.35" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="6.35" y1="-1.27" x2="6.35" y2="3.81" width="0.127" layer="21"/>
-<wire x1="6.35" y1="3.81" x2="-6.35" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="3.81" x2="-6.35" y2="-1.27" width="0.127" layer="21"/>
+<pad name="P$1" x="-7.62" y="-6.1" drill="0.9"/>
+<pad name="P$2" x="-2.54" y="-6.1" drill="0.9"/>
+<pad name="P$3" x="2.54" y="-6.1" drill="0.9"/>
+<pad name="P$4" x="7.62" y="-6.1" drill="0.9"/>
+<wire x1="-11.6" y1="-6.1" x2="11.6" y2="-6.1" width="0.127" layer="21"/>
+<wire x1="11.6" y1="-6.1" x2="11.6" y2="6.1" width="0.127" layer="21"/>
+<wire x1="11.6" y1="6.1" x2="-11.6" y2="6.1" width="0.127" layer="21"/>
+<wire x1="-11.6" y1="6.1" x2="-11.6" y2="-6.1" width="0.127" layer="21"/>
+<hole x="-10.16" y="-4" drill="2.3"/>
+<hole x="10.16" y="-4" drill="2.3"/>
 </package>
 </packages>
 <symbols>
@@ -187,6 +189,16 @@
 <wire x1="-7.62" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
 <wire x1="7.62" y1="0" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
+<symbol name="PSW_5">
+<pin name="P$1" x="-7.62" y="0" length="middle" rot="R270"/>
+<pin name="P$2" x="-2.54" y="0" length="middle" rot="R270"/>
+<pin name="P$3" x="2.54" y="0" length="middle" rot="R270"/>
+<pin name="P$4" x="7.62" y="0" length="middle" rot="R270"/>
+<wire x1="-10.16" y1="0" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="-10.16" y2="0" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JS_05_N_K">
@@ -265,6 +277,29 @@ http://www.reichelt.de/WAGO-Stecksysteme/WAGO-734-263/3/index.html?;ACTION=3;LA=
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
 <connect gate="G$1" pin="P$3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PSW_5">
+<description>PSW 5
+
+Stromversorgungsstecker f. 5 1/4 Zoll, Print, gew.
+
+http://www.reichelt.de/Floppy-Powerstecker/PSW-5/3/index.html?;ACTION=3;LA=446;ARTICLE=14915;GROUPID=3257;artnr=PSW+5;SID=11UOMKs38AAAIAABbvFEc5b11be4da1ac9cc045b827e422a49e7b</description>
+<gates>
+<gate name="G$1" symbol="PSW_5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PSW_5">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
