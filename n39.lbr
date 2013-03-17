@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -120,6 +120,23 @@
 <pad name="P$OUT2" x="0" y="-4.5" drill="2.1" shape="long"/>
 <circle x="0" y="0" radius="3.60555" width="0.127" layer="21"/>
 </package>
+<package name="RFM02">
+<description>RFM02</description>
+<smd name="SDI" x="0" y="0" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="SCK" x="2" y="0" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="NSEL" x="4" y="0" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="CLK" x="6" y="0" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="GND@1" x="8" y="0" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="GND@2" x="10" y="0" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="GND@3" x="12" y="0" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="NIRQ" x="0" y="15.9" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="FSK" x="2" y="15.9" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="GND@4" x="4" y="15.9" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="VCC" x="6" y="15.9" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="GND@5" x="8" y="15.9" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="GND@6" x="10" y="15.9" dx="1.5" dy="3" layer="1" rot="R180"/>
+<smd name="ANT" x="12" y="15.9" dx="1.5" dy="3" layer="1" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JS_05_N_K">
@@ -218,6 +235,27 @@
 <pin name="P$OUT1" x="-6" y="3" length="middle"/>
 <pin name="P$OUT2" x="7" y="3" length="middle" rot="R180"/>
 <pin name="P$IN" x="0" y="-6" length="middle" rot="R90"/>
+</symbol>
+<symbol name="RFM02">
+<description>RFM02</description>
+<pin name="SDI" x="-20.32" y="15.24" length="middle"/>
+<pin name="SCK" x="-20.32" y="12.7" length="middle"/>
+<pin name="NSEL" x="-20.32" y="10.16" length="middle"/>
+<pin name="CLK" x="-20.32" y="7.62" length="middle"/>
+<pin name="GND@1" x="-20.32" y="5.08" length="middle"/>
+<pin name="GND@2" x="-20.32" y="2.54" length="middle"/>
+<pin name="GND@3" x="-20.32" y="0" length="middle"/>
+<pin name="NIRQ" x="10.16" y="15.24" length="middle" rot="R180"/>
+<pin name="FSK" x="10.16" y="12.7" length="middle" rot="R180"/>
+<pin name="GND@4" x="10.16" y="10.16" length="middle" rot="R180"/>
+<pin name="VCC" x="10.16" y="7.62" length="middle" rot="R180"/>
+<pin name="GND@5" x="10.16" y="5.08" length="middle" rot="R180"/>
+<pin name="GND@6" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="ANT" x="10.16" y="0" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="17.78" x2="5.08" y2="17.78" width="0.254" layer="94"/>
+<wire x1="5.08" y1="17.78" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-15.24" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-2.54" x2="-15.24" y2="17.78" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -341,6 +379,35 @@ http://www.reichelt.de/index.html?ARTICLE=13158</description>
 <connect gate="G$1" pin="P$IN" pad="P$IN"/>
 <connect gate="G$1" pin="P$OUT1" pad="P$OUT1"/>
 <connect gate="G$1" pin="P$OUT2" pad="P$OUT2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFM02">
+<description>RFM02</description>
+<gates>
+<gate name="RFM02" symbol="RFM02" x="5.08" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="RFM02">
+<connects>
+<connect gate="RFM02" pin="ANT" pad="ANT"/>
+<connect gate="RFM02" pin="CLK" pad="CLK"/>
+<connect gate="RFM02" pin="FSK" pad="FSK"/>
+<connect gate="RFM02" pin="GND@1" pad="GND@1"/>
+<connect gate="RFM02" pin="GND@2" pad="GND@2"/>
+<connect gate="RFM02" pin="GND@3" pad="GND@3"/>
+<connect gate="RFM02" pin="GND@4" pad="GND@4"/>
+<connect gate="RFM02" pin="GND@5" pad="GND@5"/>
+<connect gate="RFM02" pin="GND@6" pad="GND@6"/>
+<connect gate="RFM02" pin="NIRQ" pad="NIRQ"/>
+<connect gate="RFM02" pin="NSEL" pad="NSEL"/>
+<connect gate="RFM02" pin="SCK" pad="SCK"/>
+<connect gate="RFM02" pin="SDI" pad="SDI"/>
+<connect gate="RFM02" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
