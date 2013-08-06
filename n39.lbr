@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -55,6 +55,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>parts missing @netz39</description>
 <packages>
 <package name="JS_05_N_K">
 <wire x1="0" y1="0" x2="0" y2="10" width="0.127" layer="21"/>
@@ -302,9 +303,11 @@
 </symbols>
 <devicesets>
 <deviceset name="JS_05_N_K">
-<description>Schaltrelais JK 05 N K
+<description>JS 05 N K
 
-http://www.reichelt.de/Print-Steckrelais/JS-05-N-K/3//index.html?ACTION=3&amp;GROUPID=3293&amp;ARTICLE=79414&amp;SHOW=1&amp;START=0&amp;OFFSET=16&amp;</description>
+Miniatur Leistungsrelais JS, 5V,1 Wechsler , 8A
+
+http://www.reichelt.de/?ARTICLE=79414</description>
 <gates>
 <gate name="G$1" symbol="JS_05_N_K" x="-15.24" y="-5.08"/>
 </gates>
@@ -346,7 +349,7 @@ http://www.reichelt.de/Print-Steckrelais/JS-05-N-K/3//index.html?ACTION=3&amp;GR
 
 Print-Stiftleiste, Mini, RM 3,81, gewinkelt, 2-polig
 
-http://www.reichelt.de/WAGO-Stecksysteme/WAGO-734-262/3/index.html?;ACTION=3;LA=446;ARTICLE=45978;GROUPID=5690;artnr=WAGO+734-262;SID=11UOMKs38AAAIAABbvFEc5b11be4da1ac9cc045b827e422a49e7b</description>
+http://www.reichelt.de/?ARTICLE=45978</description>
 <gates>
 <gate name="G$1" symbol="WAGO_734_262" x="0" y="2.54"/>
 </gates>
@@ -367,7 +370,7 @@ http://www.reichelt.de/WAGO-Stecksysteme/WAGO-734-262/3/index.html?;ACTION=3;LA=
 
 Print-Stiftleiste, Mini, RM 3,81, gewinkelt, 3-polig
 
-http://www.reichelt.de/WAGO-Stecksysteme/WAGO-734-263/3/index.html?;ACTION=3;LA=446;ARTICLE=45980;GROUPID=5690;artnr=WAGO+734-263;SID=11UOMKs38AAAIAABbvFEc5b11be4da1ac9cc045b827e422a49e7b</description>
+http://www.reichelt.de/?ARTICLE=45980</description>
 <gates>
 <gate name="G$1" symbol="WAGO_734_263" x="0" y="0"/>
 </gates>
@@ -389,7 +392,7 @@ http://www.reichelt.de/WAGO-Stecksysteme/WAGO-734-263/3/index.html?;ACTION=3;LA=
 
 Stromversorgungsstecker f. 5 1/4 Zoll, Print, gew.
 
-http://www.reichelt.de/Floppy-Powerstecker/PSW-5/3/index.html?;ACTION=3;LA=446;ARTICLE=14915;GROUPID=3257;artnr=PSW+5;SID=11UOMKs38AAAIAABbvFEc5b11be4da1ac9cc045b827e422a49e7b</description>
+http://www.reichelt.de/?ARTICLE=14915</description>
 <gates>
 <gate name="G$1" symbol="PSW_5" x="0" y="0"/>
 </gates>
@@ -408,10 +411,11 @@ http://www.reichelt.de/Floppy-Powerstecker/PSW-5/3/index.html?;ACTION=3;LA=446;A
 </devices>
 </deviceset>
 <deviceset name="MS_500E">
-<description>MS 500E :: Kippschalter
+<description>MS 500E
 
-1-polig, 6A-125VAC, (Ein)-Aus-(Ein)
-http://www.reichelt.de/index.html?ARTICLE=13158</description>
+Kippschalter, 1-polig, 6A-125VAC, (Ein)-Aus-(Ein)
+
+http://www.reichelt.de/?ARTICLE=13158</description>
 <gates>
 <gate name="G$1" symbol="MS500E" x="0" y="0"/>
 </gates>
