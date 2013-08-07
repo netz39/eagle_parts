@@ -39,7 +39,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
@@ -55,6 +55,7 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
+<description>parts missing @netz39</description>
 <packages>
 <package name="JS_05_N_K">
 <wire x1="0" y1="0" x2="0" y2="10" width="0.127" layer="21"/>
@@ -136,6 +137,62 @@
 <smd name="12" x="8" y="15.9" dx="1.5" dy="3" layer="1"/>
 <smd name="13" x="10" y="15.9" dx="1.5" dy="3" layer="1"/>
 <smd name="14" x="12" y="15.9" dx="1.5" dy="3" layer="1"/>
+</package>
+<package name="TO-252">
+<description>&lt;b&gt;TO-252&lt;/b&gt;</description>
+<smd name="1" x="-2.3" y="-2.4" dx="1.4" dy="3" layer="1"/>
+<smd name="3" x="2.3" y="-2.4" dx="1.4" dy="3" layer="1"/>
+<smd name="2" x="0" y="3.85" dx="6.5" dy="6" layer="1"/>
+<wire x1="-3.35" y1="-0.65" x2="-3.35" y2="5.57" width="0.2032" layer="21"/>
+<wire x1="-3.35" y1="5.57" x2="3.37" y2="5.57" width="0.2286" layer="51"/>
+<wire x1="3.37" y1="5.57" x2="3.37" y2="-0.65" width="0.2032" layer="21"/>
+<wire x1="3.37" y1="-0.65" x2="-3.35" y2="-0.65" width="0.2032" layer="21"/>
+<rectangle x1="-2.75" y1="5.55" x2="2.71" y2="6.81" layer="51"/>
+<rectangle x1="-0.55" y1="-1.65" x2="0.59" y2="-0.63" layer="51"/>
+<rectangle x1="-2.85" y1="-3.55" x2="-1.71" y2="-0.65" layer="51"/>
+<rectangle x1="1.7" y1="-3.55" x2="2.84" y2="-0.65" layer="51"/>
+<text x="-3.6" y="-0.4" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.9" y="-0.4" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="RIACON_101_2">
+<description>&lt;b&gt;RIACON AKL Typ 101&lt;/b&gt;
+
+Rastermaß 5,08 mm</description>
+<pad name="1" x="-2.54" y="0" drill="1.3" shape="octagon"/>
+<pad name="2" x="2.54" y="0" drill="1.3" shape="octagon"/>
+<wire x1="-5.08" y1="4.19" x2="5.08" y2="4.19" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="4.19" x2="5.08" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="4.19" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.2032" layer="21"/>
+<circle x="2.54" y="0" radius="0.45" width="0" layer="51"/>
+<circle x="-2.54" y="0" radius="0.45" width="0" layer="51"/>
+<text x="-4.445" y="4.445" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.445" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="ALPS_RK09K113">
+<description>&lt;b&gt;ALPS Drehpoti. linear, 6mm, mono, 10K, vertikal&lt;/b&gt;</description>
+<pad name="1" x="-2.5" y="-7" drill="1" shape="octagon"/>
+<pad name="2" x="0" y="-7" drill="1" shape="octagon"/>
+<pad name="3" x="2.5" y="-7" drill="1" shape="octagon"/>
+<circle x="-2.5" y="-7" radius="0.4" width="0" layer="51"/>
+<circle x="0" y="-7" radius="0.4" width="0" layer="51"/>
+<circle x="2.5" y="-7" radius="0.4" width="0" layer="51"/>
+<circle x="0" y="0" radius="2.5" width="1" layer="51"/>
+<wire x1="-4.9" y1="5.5" x2="4.9" y2="5.5" width="0.2032" layer="21"/>
+<wire x1="4.9" y1="5.5" x2="4.9" y2="-5.5" width="0.2032" layer="21"/>
+<wire x1="4.9" y1="-5.5" x2="-4.9" y2="-5.5" width="0.2032" layer="21"/>
+<wire x1="-4.9" y1="-5.5" x2="-4.9" y2="5.5" width="0.2032" layer="21"/>
+<rectangle x1="3.5" y1="-1.05" x2="5.3" y2="1.05" layer="46"/>
+<rectangle x1="-5.3" y1="-1.05" x2="-3.5" y2="1.05" layer="46"/>
+<circle x="0" y="0" radius="3.201559375" width="0.2032" layer="51"/>
+<pad name="P$1" x="-4.4" y="0" drill="2.1" shape="square"/>
+<pad name="P$2" x="4.4" y="0" drill="2.1" shape="square"/>
 </package>
 </packages>
 <symbols>
@@ -299,12 +356,63 @@
 <pin name="VDD" x="15.24" y="-5.08" length="middle" rot="R180"/>
 <pin name="ANT" x="15.24" y="-7.62" length="middle" rot="R180"/>
 </symbol>
+<symbol name="VOLTAGE_REGULATOR">
+<description>3 pin voltage regulator like 7805 or 2940</description>
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="2.54" width="0.4064" layer="94"/>
+<pin name="IN" x="-7.62" y="0" visible="off" length="short" direction="pwr"/>
+<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="pwr" rot="R90"/>
+<pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="pwr" rot="R180"/>
+<text x="0.508" y="-7.366" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="3.048" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-4.064" y="-0.508" size="1.27" layer="97">IN</text>
+<text x="1.27" y="-0.508" size="1.27" layer="97">OUT</text>
+<text x="-1.524" y="-4.318" size="1.27" layer="97">GND</text>
+</symbol>
+<symbol name="2POL">
+<description>generic 2 pol clamp</description>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.4064" layer="94"/>
+<circle x="0" y="0" radius="1.016" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="POTENTIOMETER">
+<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.1597" y1="1.2939" x2="-3.1989" y2="2.4495" width="0.1524" layer="94"/>
+<wire x1="-3.1989" y1="2.4495" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.1597" y1="1.2939" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
+<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="A" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JS_05_N_K">
-<description>Schaltrelais JK 05 N K
+<description>JS 05 N K
 
-http://www.reichelt.de/Print-Steckrelais/JS-05-N-K/3//index.html?ACTION=3&amp;GROUPID=3293&amp;ARTICLE=79414&amp;SHOW=1&amp;START=0&amp;OFFSET=16&amp;</description>
+Miniatur Leistungsrelais JS, 5V,1 Wechsler , 8A
+
+http://www.reichelt.de/?ARTICLE=79414</description>
 <gates>
 <gate name="G$1" symbol="JS_05_N_K" x="-15.24" y="-5.08"/>
 </gates>
@@ -346,7 +454,7 @@ http://www.reichelt.de/Print-Steckrelais/JS-05-N-K/3//index.html?ACTION=3&amp;GR
 
 Print-Stiftleiste, Mini, RM 3,81, gewinkelt, 2-polig
 
-http://www.reichelt.de/WAGO-Stecksysteme/WAGO-734-262/3/index.html?;ACTION=3;LA=446;ARTICLE=45978;GROUPID=5690;artnr=WAGO+734-262;SID=11UOMKs38AAAIAABbvFEc5b11be4da1ac9cc045b827e422a49e7b</description>
+http://www.reichelt.de/?ARTICLE=45978</description>
 <gates>
 <gate name="G$1" symbol="WAGO_734_262" x="0" y="2.54"/>
 </gates>
@@ -367,7 +475,7 @@ http://www.reichelt.de/WAGO-Stecksysteme/WAGO-734-262/3/index.html?;ACTION=3;LA=
 
 Print-Stiftleiste, Mini, RM 3,81, gewinkelt, 3-polig
 
-http://www.reichelt.de/WAGO-Stecksysteme/WAGO-734-263/3/index.html?;ACTION=3;LA=446;ARTICLE=45980;GROUPID=5690;artnr=WAGO+734-263;SID=11UOMKs38AAAIAABbvFEc5b11be4da1ac9cc045b827e422a49e7b</description>
+http://www.reichelt.de/?ARTICLE=45980</description>
 <gates>
 <gate name="G$1" symbol="WAGO_734_263" x="0" y="0"/>
 </gates>
@@ -389,7 +497,7 @@ http://www.reichelt.de/WAGO-Stecksysteme/WAGO-734-263/3/index.html?;ACTION=3;LA=
 
 Stromversorgungsstecker f. 5 1/4 Zoll, Print, gew.
 
-http://www.reichelt.de/Floppy-Powerstecker/PSW-5/3/index.html?;ACTION=3;LA=446;ARTICLE=14915;GROUPID=3257;artnr=PSW+5;SID=11UOMKs38AAAIAABbvFEc5b11be4da1ac9cc045b827e422a49e7b</description>
+http://www.reichelt.de/?ARTICLE=14915</description>
 <gates>
 <gate name="G$1" symbol="PSW_5" x="0" y="0"/>
 </gates>
@@ -408,10 +516,11 @@ http://www.reichelt.de/Floppy-Powerstecker/PSW-5/3/index.html?;ACTION=3;LA=446;A
 </devices>
 </deviceset>
 <deviceset name="MS_500E">
-<description>MS 500E :: Kippschalter
+<description>MS 500E
 
-1-polig, 6A-125VAC, (Ein)-Aus-(Ein)
-http://www.reichelt.de/index.html?ARTICLE=13158</description>
+Kippschalter, 1-polig, 6A-125VAC, (Ein)-Aus-(Ein)
+
+http://www.reichelt.de/?ARTICLE=13158</description>
 <gates>
 <gate name="G$1" symbol="MS500E" x="0" y="0"/>
 </gates>
@@ -508,6 +617,67 @@ http://www.reichelt.de/index.html?ARTICLE=13158</description>
 <connect gate="G$1" pin="SDI" pad="10"/>
 <connect gate="G$1" pin="SDO" pad="1"/>
 <connect gate="G$1" pin="VDD" pad="13"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TS2940" prefix="IC">
+<description>&lt;b&gt;1A Ultra Low Dropout Fixed Positive Voltage Regulator&lt;/b&gt;</description>
+<gates>
+<gate name="IC$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-252">
+<connects>
+<connect gate="IC$1" pin="GND" pad="2"/>
+<connect gate="IC$1" pin="IN" pad="1"/>
+<connect gate="IC$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="CP33">
+<attribute name="REICHELT" value="TS 2940 CP33" constant="no"/>
+</technology>
+<technology name="CP50">
+<attribute name="REICHELT" value="TS 2940 CP50" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RIACON_101_2">
+<description>&lt;b&gt;RIACON Anschlussklemme (AKL) Typ 101&lt;/b&gt;
+Rastermaß 5,08 mm</description>
+<gates>
+<gate name="G$1" symbol="2POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RIACON_101_2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="REICHELT" value="AKL 101-02" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ALPS_RK09K113">
+<description>&lt;b&gt;ALPS Drehpoti. linear, 6mm, mono, 10K, vertikal&lt;/b&gt;</description>
+<gates>
+<gate name="R$1" symbol="POTENTIOMETER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ALPS_RK09K113">
+<connects>
+<connect gate="R$1" pin="A" pad="3"/>
+<connect gate="R$1" pin="E" pad="1"/>
+<connect gate="R$1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
