@@ -318,11 +318,11 @@ Source: OSRAM Opto Semiconductors ... LRTB_G6SG_Pb_free.pdf</description>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
-<wire x1="40.64" y1="68.58" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="-1" pin="C"/>
-<wire x1="33.02" y1="68.58" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="58.42" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="3"/>
+<wire x1="33.02" y1="66.04" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -336,11 +336,9 @@ Source: OSRAM Opto Semiconductors ... LRTB_G6SG_Pb_free.pdf</description>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="3"/>
-<wire x1="40.64" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="66.04" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="-2" pin="C"/>
-<wire x1="30.48" y1="68.58" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="A" pin="2"/>
+<wire x1="40.64" y1="68.58" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
