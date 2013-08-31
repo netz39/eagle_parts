@@ -18,10 +18,10 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -65,6 +65,9 @@
 <rectangle x1="5.715" y1="10.795" x2="6.35" y2="11.43" layer="42"/>
 <rectangle x1="0" y1="4.445" x2="1.27" y2="8.255" layer="42"/>
 <rectangle x1="21.59" y1="4.445" x2="22.86" y2="8.255" layer="42"/>
+<text x="22.352" y="11.176" size="1.016" layer="16" font="vector" ratio="15" rot="MR0">Netz39</text>
+<text x="5.969" y="0.508" size="1.016" layer="16" font="vector" ratio="15" rot="MR0">CC
+ BY-SA</text>
 </plain>
 <libraries>
 <library name="led">
@@ -416,7 +419,59 @@ design rules under a new name.</description>
 <approved hash="19,16,566387f5b1f24b58"/>
 <approved hash="19,16,2a11f9c7c4bc2f96"/>
 <approved hash="19,16,5958843cb67d5819"/>
+<approved hash="3,16,d83980d154ee0c06"/>
+<approved hash="3,16,7a06b3596747ae18"/>
+<approved hash="1,20,1cf7c517c4271dc7"/>
+<approved hash="1,20,1ef7c717c6791f99"/>
+<approved hash="1,20,1ef7c717c6791f99"/>
+<approved hash="1,20,1cf7c517c4271dc7"/>
+<approved hash="2,20,73ac98509c81777d"/>
+<approved hash="2,20,709c9b60844f6fb3"/>
+<approved hash="19,1,7196786078d57123"/>
+<approved hash="19,1,d077faaccd538475"/>
+<approved hash="19,1,6ede6728668b6f7d"/>
+<approved hash="19,1,cac01f3743b9f5b3"/>
+<approved hash="4,16,bdcd7f9325bd65e3"/>
+<approved hash="4,16,be6c7e1125b165c2"/>
+<approved hash="4,16,bdc387bc271c636d"/>
+<approved hash="6,16,b44d8fbba11a6664"/>
+<approved hash="6,16,289af14086339c07"/>
+<approved hash="6,16,dbcb1c994c2c75c8"/>
+<approved hash="4,16,2287247404596da9"/>
+<approved hash="4,16,4287241f0e72766b"/>
+<approved hash="4,16,4cb02ec1166c761c"/>
+<approved hash="5,16,080c76f0a26dff66"/>
+<approved hash="5,16,a0562469dd2d7ae5"/>
+<approved hash="5,16,a0562469dd2d7ae5"/>
+<approved hash="5,16,080c76f0a26dff66"/>
+<approved hash="19,16,9293f15330f0055e"/>
+<approved hash="19,16,7196786078d57123"/>
+<approved hash="19,16,6ede6728668b6f7d"/>
+<approved hash="19,16,c2d2f502c473905e"/>
+<approved hash="5,16,65e8b32c61adaa9b"/>
+<approved hash="5,16,51cc44ab8b9a890f"/>
+<approved hash="5,16,202da49fd7709d7e"/>
+<approved hash="5,16,9dd0ae9a1a9c9764"/>
+<approved hash="5,16,266cedacc329e702"/>
+<approved hash="6,16,0a222cb9fcb83f10"/>
+<approved hash="5,16,63688290acecb4ec"/>
+<approved hash="5,16,9968bd87734211c4"/>
+<approved hash="5,16,25fd34c8c9c8089a"/>
+<approved hash="5,16,d64d04ce29fe211a"/>
+<approved hash="5,16,1aaed769a11a8336"/>
+<approved hash="5,16,b86c7ead47eecbed"/>
+<approved hash="5,16,06177474c3468be9"/>
+<approved hash="6,16,1cfc886b61da43c0"/>
+<approved hash="6,16,427f83c92dded0d1"/>
+<approved hash="6,16,35cde87fcad6d48a"/>
+<approved hash="6,16,137dec5d3e5dfffa"/>
 </errors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

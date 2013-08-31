@@ -344,6 +344,10 @@ Source: OSRAM Opto Semiconductors ... LRTB_G6SG_Pb_free.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,40.8771,69.9812,JP2,,,,,"/>
+<approved hash="113,1,4.84293,67.1788,JP3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
