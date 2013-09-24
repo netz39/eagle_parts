@@ -266,6 +266,34 @@ Rastermaß 5,08 mm</description>
 <text x="-5.715" y="5.715" size="1.27" layer="25">&gt;NAME</text>
 <text x="-5.715" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="USB_B_UP-S">
+<pad name="2" x="-1.25" y="3.2" drill="0.95" shape="octagon"/>
+<pad name="1" x="1.25" y="3.2" drill="0.95" shape="octagon"/>
+<pad name="4" x="1.25" y="0" drill="0.95" shape="octagon"/>
+<pad name="3" x="-1.25" y="0" drill="0.95" shape="octagon"/>
+<wire x1="-6" y1="7.1" x2="6" y2="7.1" width="0.127" layer="21"/>
+<wire x1="6" y1="7.1" x2="6" y2="-3.9" width="0.127" layer="21"/>
+<wire x1="6" y1="-3.9" x2="-6" y2="-3.9" width="0.127" layer="21"/>
+<wire x1="-6" y1="-3.9" x2="-6" y2="7.1" width="0.127" layer="21"/>
+<wire x1="-4.3" y1="-2.3" x2="4.3" y2="-2.3" width="0.127" layer="51"/>
+<wire x1="4.3" y1="-2.3" x2="4.3" y2="4" width="0.127" layer="51"/>
+<wire x1="4.3" y1="4" x2="2.8" y2="5.5" width="0.127" layer="51"/>
+<wire x1="2.8" y1="5.5" x2="-2.8" y2="5.5" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="5.5" x2="-4.3" y2="4" width="0.127" layer="51"/>
+<wire x1="-4.3" y1="4" x2="-4.3" y2="-2.3" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="3.2" x2="2.8" y2="3.2" width="0.127" layer="51"/>
+<wire x1="2.8" y1="3.2" x2="2.8" y2="0" width="0.127" layer="51"/>
+<wire x1="2.8" y1="0" x2="-2.8" y2="0" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="0" x2="-2.8" y2="3.2" width="0.127" layer="51"/>
+<rectangle x1="-1.75" y1="3.2" x2="-0.75" y2="3.5" layer="51"/>
+<rectangle x1="0.75" y1="3.2" x2="1.75" y2="3.5" layer="51"/>
+<rectangle x1="0.75" y1="-0.3" x2="1.75" y2="0" layer="51"/>
+<rectangle x1="-1.75" y1="-0.3" x2="-0.75" y2="0" layer="51"/>
+<text x="-5.715" y="5.715" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.715" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="P$1" x="6" y="0.7" drill="2.3"/>
+<pad name="P$2" x="-6" y="0.7" drill="2.3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JS_05_N_K">
@@ -858,6 +886,19 @@ Rastermaß 5,08 mm</description>
 </gates>
 <devices>
 <device name="" package="USB_B_UP">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VBUS" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="REICHELT" value="USB BG" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="S" package="USB_B_UP-S">
 <connects>
 <connect gate="G$1" pin="D+" pad="3"/>
 <connect gate="G$1" pin="D-" pad="2"/>
