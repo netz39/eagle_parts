@@ -691,7 +691,7 @@ http://www.reichelt.de/?ARTICLE=13158</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RFM02">
+<deviceset name="RFM02" prefix="IC">
 <description>RFM02</description>
 <gates>
 <gate name="RFM02" symbol="RFM02" x="5.08" y="-7.62"/>
@@ -720,7 +720,7 @@ http://www.reichelt.de/?ARTICLE=13158</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RFM01">
+<deviceset name="RFM01" prefix="IC">
 <description>RFM01</description>
 <gates>
 <gate name="G$1" symbol="RFM01" x="0" y="0"/>
@@ -749,7 +749,7 @@ http://www.reichelt.de/?ARTICLE=13158</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RFM12">
+<deviceset name="RFM12" prefix="IC">
 <description>RFM12</description>
 <gates>
 <gate name="G$1" symbol="RFM12" x="0" y="0"/>
@@ -778,7 +778,7 @@ http://www.reichelt.de/?ARTICLE=13158</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AWM661TX">
+<deviceset name="AWM661TX" prefix="IC">
 <gates>
 <gate name="G$1" symbol="AWM661TX" x="-2.54" y="-5.08"/>
 </gates>
@@ -847,7 +847,7 @@ Rastermaß 5,08 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ALPS_RK09K113">
+<deviceset name="ALPS_RK09K113" prefix="R">
 <description>&lt;b&gt;ALPS Drehpoti. linear, 6mm, mono, 10K, vertikal&lt;/b&gt;</description>
 <gates>
 <gate name="R$1" symbol="POTENTIOMETER" x="0" y="0"/>
