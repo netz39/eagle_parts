@@ -167,6 +167,7 @@
 <wire x1="21" y1="5.5" x2="21" y2="6.5" width="0.127" layer="21" curve="-180"/>
 <smd name="GND_1" x="8" y="26.67" dx="2.54" dy="1.27" layer="1" rot="R90"/>
 <smd name="GND_2" x="12" y="26.67" dx="2.54" dy="1.27" layer="1" rot="R90"/>
+</package>
 <package name="TO-252">
 <description>&lt;b&gt;TO-252&lt;/b&gt;</description>
 <smd name="1" x="-2.3" y="-2.4" dx="1.4" dy="3" layer="1"/>
@@ -474,6 +475,7 @@ Rastermaß 5,08 mm</description>
 <pin name="BYPASS" x="20.32" y="-10.16" length="middle" rot="R90"/>
 <pin name="GND_1" x="-15.24" y="20.32" length="middle" rot="R270"/>
 <pin name="GND_2" x="-10.16" y="20.32" length="middle" rot="R270"/>
+</symbol>
 <symbol name="VOLTAGE_REGULATOR">
 <description>3 pin voltage regulator like 7805 or 2940</description>
 <wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
@@ -795,6 +797,13 @@ http://www.reichelt.de/?ARTICLE=13158</description>
 <connect gate="G$1" pin="GND_2" pad="GND_2"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 <connect gate="G$1" pin="VIDEO" pad="VIDEO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="TS2940" prefix="IC">
 <description>&lt;b&gt;1A Ultra Low Dropout Fixed Positive Voltage Regulator&lt;/b&gt;</description>
 <gates>
