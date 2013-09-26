@@ -295,6 +295,22 @@ Rastermaß 5,08 mm</description>
 <pad name="P$1" x="6" y="0.7" drill="2.3"/>
 <pad name="P$2" x="-6" y="0.7" drill="2.3"/>
 </package>
+<package name="PTC-FUSE-1812">
+<description>PTC-Fuse SMD Package 1812</description>
+<smd name="P$1" x="-2.49" y="0" dx="3.2" dy="1.78" layer="1" rot="R90"/>
+<smd name="P$2" x="2.49" y="0" dx="3.2" dy="1.78" layer="1" rot="R90"/>
+<wire x1="-2.275" y1="1.62" x2="2.275" y2="1.62" width="0.127" layer="21"/>
+<wire x1="2.275" y1="1.62" x2="2.275" y2="0.25" width="0.127" layer="21"/>
+<wire x1="-2.275" y1="1.62" x2="-2.275" y2="0.25" width="0.127" layer="21"/>
+<wire x1="-2.275" y1="0.25" x2="-2.275" y2="-0.25" width="0.127" layer="21" curve="-180"/>
+<wire x1="2.275" y1="0.25" x2="2.275" y2="-0.25" width="0.127" layer="21" curve="180"/>
+<wire x1="-2.275" y1="-0.25" x2="-2.275" y2="-1.62" width="0.127" layer="21"/>
+<wire x1="-2.275" y1="-1.62" x2="2.275" y2="-1.62" width="0.127" layer="21"/>
+<wire x1="2.275" y1="-1.62" x2="2.275" y2="-0.25" width="0.127" layer="21"/>
+<rectangle x1="-1.975" y1="-1.62" x2="1.975" y2="1.62" layer="51"/>
+<text x="-3.175" y="1.905" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-2.667" size="0.8128" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="JS_05_N_K">
@@ -558,6 +574,17 @@ Rastermaß 5,08 mm</description>
 <pin name="GND" x="12.7" y="-2.54" length="middle" direction="pas" rot="R180"/>
 <text x="-7.366" y="8.128" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.366" y="-7.366" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="FUSE">
+<wire x1="-3.81" y1="-0.762" x2="3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0.762" x2="-3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-0.762" x2="3.81" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0.762" x2="-3.81" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="-3.81" y="1.397" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -918,6 +945,23 @@ Rastermaß 5,08 mm</description>
 <technology name="">
 <attribute name="REICHELT" value="USB BG" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SIBA_194600" prefix="F">
+<description>Fuse</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PTC-FUSE-1812">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
