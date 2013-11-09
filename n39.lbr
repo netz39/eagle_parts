@@ -351,6 +351,22 @@ Rastermaß 5,08 mm</description>
 <rectangle x1="-0.82" y1="-3.4" x2="-0.47" y2="-2.5" layer="51"/>
 <rectangle x1="-2.08" y1="-3.4" x2="-1.73" y2="-2.5" layer="51"/>
 </package>
+<package name="WS2812">
+<smd name="6" x="0" y="0" dx="1.5" dy="1" layer="1"/>
+<smd name="5" x="0" y="-1.6" dx="1.5" dy="1" layer="1"/>
+<smd name="4" x="0" y="-3.2" dx="1.5" dy="1" layer="1"/>
+<smd name="3" x="4.8" y="0" dx="1.5" dy="1" layer="1"/>
+<smd name="2" x="4.8" y="-1.6" dx="1.5" dy="1" layer="1"/>
+<smd name="1" x="4.8" y="-3.2" dx="1.5" dy="1" layer="1"/>
+<wire x1="-0.1" y1="0.8" x2="4.9" y2="0.8" width="0.127" layer="21"/>
+<wire x1="4.9" y1="0.8" x2="4.9" y2="-3.7" width="0.127" layer="21"/>
+<wire x1="4.9" y1="-3.7" x2="4.9" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="4.9" y1="-4.2" x2="4.4" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="4.4" y1="-4.2" x2="-0.1" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-4.2" x2="-0.1" y2="0.8" width="0.127" layer="21"/>
+<text x="1.7" y="0.3" size="1.27" layer="25" rot="R270">2812</text>
+<wire x1="4.9" y1="-3.7" x2="4.4" y2="-4.2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JS_05_N_K">
@@ -666,6 +682,67 @@ Rastermaß 5,08 mm</description>
 <pin name="A1" x="12.7" y="-2.54" length="middle" direction="in" rot="R180"/>
 <pin name="A0" x="12.7" y="0" length="middle" direction="in" rot="R180"/>
 <pin name="V_S" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="MIC4802">
+<description>&lt;h1&gt;MIC4802 — High-Power LED driver&lt;/h1&gt;
+&lt;h2&gt;General Description&lt;/h2&gt;
+
+&lt;p&gt;The MIC4802 is a high efficiency White LED (WLED) driver designed to drive a single LED up to 800mA. The MIC4802 constant current driver is designed to drive high power LED’s in various lighting applications. The MIC4802 provides the highest possible efficiency as this architecture has no switching losses present in traditional charge pumps or inductive boost circuits. It features a typical dropout of 280mV at 800mA. This allows the LEDs to be
+driven directly from the voltage source eliminating switching noise/losses present with the use of boost circuitry. The high accuracy (±1% Typical) current regulated WLED channel ensures uniform display illumination under all conditions. The brightness is controlled through an Ultra Fast PWMTM Control interface operating down to less than 1% duty cycle.&lt;/p&gt;
+&lt;p&gt;The MIC4802 is available in the 8-pin SOIC Epad package with a junction temperature range of -40°C to +125°C.&lt;/p&gt;
+&lt;p&gt; Datasheets and support documentation can be found on Micrel’s web site at: &lt;a href="www.micrel.com"&gt;www.micrel.com&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;High Efficiency (no Voltage Boost losses)&lt;/li&gt;
+&lt;li&gt;Ultra Fast PWMTM control (200Hz to 500kHz)&lt;/li&gt;
+&lt;li&gt;Input voltage range: 3.0V to 5.5V&lt;/li&gt;
+&lt;li&gt;Dropout of 280mV at 800mA&lt;/li&gt;
+&lt;li&gt;Programmable LED current with external resistor&lt;/li&gt;
+&lt;li&gt; Current accuracy of ±1% typical&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Applications&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bill board displays&lt;/li&gt;
+&lt;li&gt;Marquee displays&lt;/li&gt;
+&lt;li&gt;Instrument displays&lt;/li&gt;
+&lt;li&gt;Architectural lighting&lt;/li&gt;
+&lt;/ul&gt;</description>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<pin name="VCC" x="-15.24" y="7.62" length="middle" direction="pwr"/>
+<pin name="EN" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="RSET" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="GND" x="-15.24" y="-7.62" length="middle" direction="pwr"/>
+<pin name="D" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<text x="0" y="5.08" size="1.778" layer="94" rot="R270">MIC4802</text>
+</symbol>
+<symbol name="WS2812">
+<description>&lt;h1&gt;WS2812 — Intelligent control LED integrated light source&lt;/h1&gt;
+&lt;h2&gt;General description&lt;/h2&gt;
+
+&lt;p&gt;WS2812 is a intelligent control LED light source that the control circuit and RGB chip are integrated in a package of 5050 components. It internal include intelligent digital port data latch and signal reshaping amplification drive circuit. Also include a precision internal oscillator and a 12V voltage programmable constant curre-nt control part, effectively ensuring the pixel point light color height consistent.&lt;/p&gt;
+
+&lt;p&gt;The data transfer protocol use single NZR communication mode. After the pixel power-on reset, the DIN port receive data from controller, the first pixel collect initial 24bit data then sent to the internal data latch, the other data which reshaping by the internal signal reshaping amplification circuit sent to the next cascade pixel through the DO port. After transmission for each pixel,the signal to reduce 24bit. pixel adopt auto resha -ping transmit technology, making the pixel cascade number is not limited the signal transmission, only depend
+on the speed of signal transmission.&lt;/p&gt;
+
+&lt;p&gt;LED with low driving voltage, environmental protection and energy saving, high brightness, scattering angle is large, good consistency, low power, long life and other advantages. The control chip integrated in LED above becoming more simple circuit, small volume, convenient installation.&lt;/p&gt;</description>
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<pin name="DI" x="-17.78" y="-7.62" length="middle" direction="in"/>
+<pin name="DO" x="17.78" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="VCC" x="-17.78" y="7.62" length="middle" direction="pwr"/>
+<pin name="VDD" x="-17.78" y="2.54" length="middle" direction="pwr"/>
+<pin name="GND" x="17.78" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<circle x="0" y="0" radius="3.5921" width="0.254" layer="94"/>
+<text x="-5.08" y="-10.16" size="1.778" layer="94">WS2812</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1069,6 +1146,80 @@ Rastermaß 5,08 mm</description>
 <technology name="">
 <attribute name="REICHELT" value="LM 75 SMD" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC4802">
+<description>&lt;h1&gt;MIC4802 — High-Power LED driver&lt;/h1&gt;
+&lt;h2&gt;General Description&lt;/h2&gt;
+
+&lt;p&gt;The MIC4802 is a high efficiency White LED (WLED) driver designed to drive a single LED up to 800mA. The MIC4802 constant current driver is designed to drive high power LED’s in various lighting applications. The MIC4802 provides the highest possible efficiency as this architecture has no switching losses present in traditional charge pumps or inductive boost circuits. It features a typical dropout of 280mV at 800mA. This allows the LEDs to be
+driven directly from the voltage source eliminating switching noise/losses present with the use of boost circuitry. The high accuracy (±1% Typical) current regulated WLED channel ensures uniform display illumination under all conditions. The brightness is controlled through an Ultra Fast PWMTM Control interface operating down to less than 1% duty cycle.&lt;/p&gt;
+&lt;p&gt;The MIC4802 is available in the 8-pin SOIC Epad package with a junction temperature range of -40°C to +125°C.&lt;/p&gt;
+&lt;p&gt; Datasheets and support documentation can be found on Micrel’s web site at: &lt;a href="www.micrel.com"&gt;www.micrel.com&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;High Efficiency (no Voltage Boost losses)&lt;/li&gt;
+&lt;li&gt;Ultra Fast PWMTM control (200Hz to 500kHz)&lt;/li&gt;
+&lt;li&gt;Input voltage range: 3.0V to 5.5V&lt;/li&gt;
+&lt;li&gt;Dropout of 280mV at 800mA&lt;/li&gt;
+&lt;li&gt;Programmable LED current with external resistor&lt;/li&gt;
+&lt;li&gt; Current accuracy of ±1% typical&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Applications&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bill board displays&lt;/li&gt;
+&lt;li&gt;Marquee displays&lt;/li&gt;
+&lt;li&gt;Instrument displays&lt;/li&gt;
+&lt;li&gt;Architectural lighting&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="MIC4802" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="D" pad="5 6 7 8"/>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="RSET" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WS2812">
+<description>&lt;h1&gt;WS2812 — Intelligent control LED integrated light source&lt;/h1&gt;
+&lt;h2&gt;General description&lt;/h2&gt;
+
+&lt;p&gt;WS2812 is a intelligent control LED light source that the control circuit and RGB chip are integrated in a package of 5050 components. It internal include intelligent digital port data latch and signal reshaping amplification drive circuit. Also include a precision internal oscillator and a 12V voltage programmable constant curre-nt control part, effectively ensuring the pixel point light color height consistent.&lt;/p&gt;
+
+&lt;p&gt;The data transfer protocol use single NZR communication mode. After the pixel power-on reset, the DIN port receive data from controller, the first pixel collect initial 24bit data then sent to the internal data latch, the other data which reshaping by the internal signal reshaping amplification circuit sent to the next cascade pixel through the DO port. After transmission for each pixel,the signal to reduce 24bit. pixel adopt auto resha -ping transmit technology, making the pixel cascade number is not limited the signal transmission, only depend
+on the speed of signal transmission.&lt;/p&gt;
+
+&lt;p&gt;LED with low driving voltage, environmental protection and energy saving, high brightness, scattering angle is large, good consistency, low power, long life and other advantages. The control chip integrated in LED above becoming more simple circuit, small volume, convenient installation.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="WS2812" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WS2812">
+<connects>
+<connect gate="G$1" pin="DI" pad="2"/>
+<connect gate="G$1" pin="DO" pad="1"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
