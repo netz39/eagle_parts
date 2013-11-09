@@ -667,6 +667,45 @@ Rastermaß 5,08 mm</description>
 <pin name="A0" x="12.7" y="0" length="middle" direction="in" rot="R180"/>
 <pin name="V_S" x="12.7" y="5.08" length="middle" direction="pwr" rot="R180"/>
 </symbol>
+<symbol name="MIC4802">
+<description>&lt;h1&gt;MIC4802 — High-Power LED driver&lt;/h1&gt;
+&lt;h2&gt;General Description&lt;/h2&gt;
+
+&lt;p&gt;The MIC4802 is a high efficiency White LED (WLED) driver designed to drive a single LED up to 800mA. The MIC4802 constant current driver is designed to drive high power LED’s in various lighting applications. The MIC4802 provides the highest possible efficiency as this architecture has no switching losses present in traditional charge pumps or inductive boost circuits. It features a typical dropout of 280mV at 800mA. This allows the LEDs to be
+driven directly from the voltage source eliminating switching noise/losses present with the use of boost circuitry. The high accuracy (±1% Typical) current regulated WLED channel ensures uniform display illumination under all conditions. The brightness is controlled through an Ultra Fast PWMTM Control interface operating down to less than 1% duty cycle.&lt;/p&gt;
+&lt;p&gt;The MIC4802 is available in the 8-pin SOIC Epad package with a junction temperature range of -40°C to +125°C.&lt;/p&gt;
+&lt;p&gt; Datasheets and support documentation can be found on Micrel’s web site at: &lt;a href="www.micrel.com"&gt;www.micrel.com&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;High Efficiency (no Voltage Boost losses)&lt;/li&gt;
+&lt;li&gt;Ultra Fast PWMTM control (200Hz to 500kHz)&lt;/li&gt;
+&lt;li&gt;Input voltage range: 3.0V to 5.5V&lt;/li&gt;
+&lt;li&gt;Dropout of 280mV at 800mA&lt;/li&gt;
+&lt;li&gt;Programmable LED current with external resistor&lt;/li&gt;
+&lt;li&gt; Current accuracy of ±1% typical&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Applications&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bill board displays&lt;/li&gt;
+&lt;li&gt;Marquee displays&lt;/li&gt;
+&lt;li&gt;Instrument displays&lt;/li&gt;
+&lt;li&gt;Architectural lighting&lt;/li&gt;
+&lt;/ul&gt;</description>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<pin name="VCC" x="-15.24" y="7.62" length="middle"/>
+<pin name="EN" x="-15.24" y="2.54" length="middle"/>
+<pin name="RSET" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GND" x="-15.24" y="-7.62" length="middle"/>
+<pin name="D" x="12.7" y="0" length="middle" rot="R180"/>
+<text x="0" y="5.08" size="1.778" layer="94" rot="R270">MIC4802</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JS_05_N_K">
@@ -1069,6 +1108,52 @@ Rastermaß 5,08 mm</description>
 <technology name="">
 <attribute name="REICHELT" value="LM 75 SMD" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC4802">
+<description>&lt;h1&gt;MIC4802 — High-Power LED driver&lt;/h1&gt;
+&lt;h2&gt;General Description&lt;/h2&gt;
+
+&lt;p&gt;The MIC4802 is a high efficiency White LED (WLED) driver designed to drive a single LED up to 800mA. The MIC4802 constant current driver is designed to drive high power LED’s in various lighting applications. The MIC4802 provides the highest possible efficiency as this architecture has no switching losses present in traditional charge pumps or inductive boost circuits. It features a typical dropout of 280mV at 800mA. This allows the LEDs to be
+driven directly from the voltage source eliminating switching noise/losses present with the use of boost circuitry. The high accuracy (±1% Typical) current regulated WLED channel ensures uniform display illumination under all conditions. The brightness is controlled through an Ultra Fast PWMTM Control interface operating down to less than 1% duty cycle.&lt;/p&gt;
+&lt;p&gt;The MIC4802 is available in the 8-pin SOIC Epad package with a junction temperature range of -40°C to +125°C.&lt;/p&gt;
+&lt;p&gt; Datasheets and support documentation can be found on Micrel’s web site at: &lt;a href="www.micrel.com"&gt;www.micrel.com&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;High Efficiency (no Voltage Boost losses)&lt;/li&gt;
+&lt;li&gt;Ultra Fast PWMTM control (200Hz to 500kHz)&lt;/li&gt;
+&lt;li&gt;Input voltage range: 3.0V to 5.5V&lt;/li&gt;
+&lt;li&gt;Dropout of 280mV at 800mA&lt;/li&gt;
+&lt;li&gt;Programmable LED current with external resistor&lt;/li&gt;
+&lt;li&gt; Current accuracy of ±1% typical&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Applications&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bill board displays&lt;/li&gt;
+&lt;li&gt;Marquee displays&lt;/li&gt;
+&lt;li&gt;Instrument displays&lt;/li&gt;
+&lt;li&gt;Architectural lighting&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="MIC4802" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="D" pad="5 6 7 8"/>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="RSET" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
