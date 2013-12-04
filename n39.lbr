@@ -1284,10 +1284,10 @@ the advantages of Reed Technology.
 <devices>
 <device name="" package="SIL05-1A72">
 <connects>
-<connect gate="G$1" pin="1" pad="P7"/>
+<connect gate="G$1" pin="1" pad="P1"/>
 <connect gate="G$1" pin="3" pad="P3"/>
 <connect gate="G$1" pin="5" pad="P5"/>
-<connect gate="G$1" pin="7" pad="P1"/>
+<connect gate="G$1" pin="7" pad="P7"/>
 </connects>
 <technologies>
 <technology name=""/>
