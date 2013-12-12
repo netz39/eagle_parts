@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1393,8 +1393,20 @@ the advantages of Reed Technology.
 </device>
 </devices>
 </deviceset>
-<deviceset name="ZETTLER_AZ9703">
-<description>http://www.pollin.de/shop/dt/MDU1OTU2OTk-/Bauelemente_Bauteile/Mechanische_Bauelemente/Relais_Zugmagnete/Relais_ZETTLER_AZ9703_1A_12DSE.html</description>
+<deviceset name="ZETTLER_AZ9703-1A-12DSE">
+<description>&lt;h1&gt;Relais ZETTLER AZ9703-1A-12DSE&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;12 V-/120 Ω,&lt;/li&gt;
+&lt;li&gt;Schaltleistung 14 V-/40 A,&lt;/li&gt;
+&lt;li&gt;1 Schließer,&lt;/li&gt;
+&lt;li&gt;Printmontage.&lt;/li&gt;
+&lt;li&gt;Maße (BxHxT): 26x21x21 mm.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Erhältlich bei &lt;a href="http://www.pollin.de/shop/dt/MDU1OTU2OTk-/Bauelemente_Bauteile/Mechanische_Bauelemente/Relais_Zugmagnete/Relais_ZETTLER_AZ9703_1A_12DSE.html"&gt;Pollin (Relais ZETTLER AZ9703-1A-12DSE)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Autor: Hichi&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ZETTLER_AZ9703" x="-10.16" y="5.08"/>
 </gates>
