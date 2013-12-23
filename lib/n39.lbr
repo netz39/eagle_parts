@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1001,6 +1001,28 @@ on the speed of signal transmission.&lt;/p&gt;
 <pin name="S" x="-5.08" y="2.54" visible="pad" length="short" direction="pas" swaplevel="2"/>
 <pin name="O" x="5.08" y="2.54" visible="pad" length="short" direction="pas" swaplevel="3" rot="R180"/>
 </symbol>
+<symbol name="ACS714">
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="4.445" x2="-5.08" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.2352" x2="-5.08" y2="-9.525" width="0.254" layer="94"/>
+<wire x1="-4.572" y1="-2.54" x2="-4.572" y2="-2.794" width="0.0508" layer="94" curve="331.927513" cap="flat"/>
+<wire x1="-4.064" y1="-2.54" x2="-4.064" y2="-2.794" width="0.0508" layer="94" curve="345.694225" cap="flat"/>
+<wire x1="-4.572" y1="-2.54" x2="-4.064" y2="-2.54" width="0.0508" layer="94"/>
+<wire x1="-4.572" y1="-2.794" x2="-4.064" y2="-2.794" width="0.0508" layer="94"/>
+<text x="-2.54" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-6.35" y="-11.684" size="1.524" layer="95">IP-</text>
+<text x="-6.35" y="5.08" size="1.524" layer="95">IP+</text>
+<pin name="IP-" x="-5.08" y="-17.78" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="IP+" x="-5.08" y="12.7" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="GND" x="10.16" y="-10.16" length="short" direction="pwr" rot="R180"/>
+<pin name="VCC" x="10.16" y="5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="VOUT" x="10.16" y="0" length="short" direction="out" rot="R180"/>
+<pin name="FILTER" x="10.16" y="-5.08" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JS_05_N_K">
@@ -1646,6 +1668,30 @@ Packages:
 <connect gate="W2" pin="O" pad="O1"/>
 <connect gate="W2" pin="P" pad="P1"/>
 <connect gate="W2" pin="S" pad="S1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ASC714">
+<description>&lt;h1&gt;ACS714&lt;/h1&gt;
+&lt;p&gt;Automotive Grade, Fully Integrated, Hall Effect-Based Linear Current Sensor IC with 2.1 kVRMS Voltage Isolation and a Low-Resistance Current Conductor&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Autor: Tux&lt;/i&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="ACS714" symbol="ACS714" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="SOIC8">
+<connects>
+<connect gate="ACS714" pin="FILTER" pad="6"/>
+<connect gate="ACS714" pin="GND" pad="5"/>
+<connect gate="ACS714" pin="IP+" pad="1 2"/>
+<connect gate="ACS714" pin="IP-" pad="3 4"/>
+<connect gate="ACS714" pin="VCC" pad="8"/>
+<connect gate="ACS714" pin="VOUT" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
