@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -482,6 +482,17 @@ Rastermaß 5,08 mm</description>
 <wire x1="7.62" y1="2.54" x2="6.35" y2="3.81" width="0.3048" layer="21"/>
 <wire x1="-7.62" y1="2.54" x2="-7.62" y2="3.81" width="0.127" layer="21"/>
 <wire x1="-7.62" y1="0" x2="-7.62" y2="-1.27" width="0.127" layer="21"/>
+</package>
+<package name="I3C_PADS">
+<description>&lt;h1&gt;I³C Solder Pads&lt;/h1&gt;
+
+&lt;p&gt;I³C port with solder pads&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Author: Tux&lt;/i&gt;&lt;/p&gt;</description>
+<pad name="REQ" x="0" y="0" drill="0.8" shape="long"/>
+<pad name="VCC" x="0" y="2.54" drill="0.8" shape="long"/>
+<pad name="GND" x="0" y="5.08" drill="0.8" shape="long"/>
+<pad name="SCL" x="0" y="-2.54" drill="0.8" shape="long"/>
+<pad name="SDA" x="0" y="-5.08" drill="0.8" shape="long"/>
 </package>
 </packages>
 <symbols>
@@ -1022,6 +1033,17 @@ on the speed of signal transmission.&lt;/p&gt;
 <pin name="VCC" x="10.16" y="5.08" length="short" direction="pwr" rot="R180"/>
 <pin name="VOUT" x="10.16" y="0" length="short" direction="out" rot="R180"/>
 <pin name="FILTER" x="10.16" y="-5.08" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="I3C_PORT">
+<pin name="SDA" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="REQ" x="10.16" y="-2.54" length="middle" rot="R180"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="-5.08" visible="off" length="point" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="10.16" visible="off" length="point" direction="pwr" rot="R270"/>
+<pin name="SCL" x="10.16" y="7.62" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1692,6 +1714,30 @@ Packages:
 <connect gate="ACS714" pin="IP-" pad="3 4"/>
 <connect gate="ACS714" pin="VCC" pad="8"/>
 <connect gate="ACS714" pin="VOUT" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="I3C_PORT">
+<description>&lt;h1&gt;I³C Port&lt;/h1&gt;
+
+&lt;p&gt;I³C is I²C with an additional request line, which a client can pull down to signal relevant state changes and trigger the master to poll data, and GND+VCC lines.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Author: Tux&lt;/i&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="I3C_PORT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="I3C_PADS">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="REQ" pad="REQ"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
