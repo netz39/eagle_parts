@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -223,6 +223,12 @@ Rastermaß 5,08 mm</description>
 <circle x="0" y="0" radius="3.201559375" width="0.2032" layer="51"/>
 <pad name="P$1" x="-4.4" y="0" drill="2.1" shape="square"/>
 <pad name="P$2" x="4.4" y="0" drill="2.1" shape="square"/>
+<circle x="0" y="-4.2" radius="0.7" width="0" layer="51"/>
+<circle x="3" y="-4.2" radius="0.8" width="0" layer="51"/>
+<circle x="-3" y="-4.2" radius="0.8" width="0" layer="51"/>
+<circle x="0" y="4.2" radius="0.7" width="0" layer="51"/>
+<circle x="-3" y="4.2" radius="0.8" width="0" layer="51"/>
+<circle x="3" y="4.2" radius="0.8" width="0" layer="51"/>
 </package>
 <package name="JTP-1130">
 <pad name="2" x="-3.25" y="-2.25" drill="1" shape="octagon"/>
