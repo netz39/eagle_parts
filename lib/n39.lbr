@@ -1326,7 +1326,7 @@ http://www.reichelt.de/?ARTICLE=13158</description>
 <gate name="IC$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO-252">
+<device name="S" package="TO-252">
 <connects>
 <connect gate="IC$1" pin="GND" pad="2"/>
 <connect gate="IC$1" pin="IN" pad="1"/>
@@ -1338,6 +1338,27 @@ http://www.reichelt.de/?ARTICLE=13158</description>
 </technology>
 <technology name="CP50">
 <attribute name="REICHELT" value="TS 2940 CP50" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TV" package="TO220V">
+<connects>
+<connect gate="IC$1" pin="GND" pad="2"/>
+<connect gate="IC$1" pin="IN" pad="1"/>
+<connect gate="IC$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="CT12">
+<attribute name="REICHELT" value="LM 2940 CT12" constant="no"/>
+</technology>
+<technology name="CT15">
+<attribute name="REICHELT" value="LM 2940 CT15" constant="no"/>
+</technology>
+<technology name="CT5">
+<attribute name="REICHELT" value="LM 2940 CT5" constant="no"/>
+</technology>
+<technology name="CZ33">
+<attribute name="REICHELT" value="TS 2940 CZ33" constant="no"/>
 </technology>
 </technologies>
 </device>
