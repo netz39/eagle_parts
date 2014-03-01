@@ -647,6 +647,21 @@ Rastermaß 5,08 mm</description>
 <wire x1="0.6" y1="3.3" x2="-0.6" y2="3.3" width="0" layer="20"/>
 <wire x1="-0.6" y1="3.3" x2="-0.6" y2="4" width="0" layer="20" curve="-180"/>
 </package>
+<package name="DC_JACK_HEBO13">
+<description>&lt;h1&gt;Hohlstecker-Printeinbaubuchse, gewinkelt&lt;/h1&gt;
+&lt;p&gt;Reichelt: &lt;a href="http://www.reichelt.de/index.html?ARTICLE=35275"&gt;HEBO 13&lt;/a&gt;&lt;/p&gt;</description>
+<hole x="2.54" y="-1.27" drill="1.1"/>
+<pad name="INNER" x="0" y="1.27" drill="1.1" shape="offset" rot="R180"/>
+<pad name="OUTER" x="0" y="-3.81" drill="1.1" shape="offset" rot="R180"/>
+<wire x1="-2.78" y1="1.52" x2="2.72" y2="1.52" width="0.127" layer="21"/>
+<wire x1="2.72" y1="1.52" x2="2.72" y2="-9.98" width="0.127" layer="21"/>
+<wire x1="2.72" y1="-9.98" x2="-2.78" y2="-9.98" width="0.127" layer="21"/>
+<wire x1="-2.78" y1="-9.98" x2="-2.78" y2="1.52" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-3.81" x2="-0.635" y2="-8.255" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-8.255" x2="0.635" y2="-3.81" width="0.127" layer="21" style="longdash"/>
+<wire x1="0.635" y1="-3.81" x2="-0.635" y2="-3.81" width="0.127" layer="21" style="longdash"/>
+<wire x1="0.635" y1="-8.255" x2="-0.635" y2="-8.255" width="0.127" layer="21" curve="-180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JS_05_N_K">
@@ -1239,6 +1254,14 @@ on the speed of signal transmission.&lt;/p&gt;
 <text x="0" y="0" size="1.778" layer="97" align="center-left">D+</text>
 <text x="0" y="-2.54" size="1.778" layer="97" align="center-left">ID</text>
 <text x="0" y="-5.08" size="1.778" layer="97" align="center-left">GND</text>
+</symbol>
+<symbol name="DC_JACK">
+<pin name="INNER" x="0" y="2.54" length="middle" direction="pwr"/>
+<pin name="OUTER" x="0" y="-2.54" length="middle" direction="pwr"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2069,6 +2092,28 @@ Rastermaß 5,08 mm</description>
 <technology name="">
 <attribute name="REICHELT" value="USB BWM" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DC_JACK">
+<description>&lt;h1&gt;DC Power Jack&lt;/h1&gt;
+
+&lt;p&gt;Variants&lt;/p&gt;
+&lt;ul&gt;
+   &lt;li&gt;&lt;a href="http://www.reichelt.de/index.html?ARTICLE=35275"&gt;Reichelt HEBO 13&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="DC_JACK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DC_JACK_HEBO13">
+<connects>
+<connect gate="G$1" pin="INNER" pad="INNER"/>
+<connect gate="G$1" pin="OUTER" pad="OUTER"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
