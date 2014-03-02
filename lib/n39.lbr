@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -650,7 +650,6 @@ Rastermaß 5,08 mm</description>
 <package name="DC_JACK_HEBO13">
 <description>&lt;h1&gt;Hohlstecker-Printeinbaubuchse, gewinkelt&lt;/h1&gt;
 &lt;p&gt;Reichelt: &lt;a href="http://www.reichelt.de/index.html?ARTICLE=35275"&gt;HEBO 13&lt;/a&gt;&lt;/p&gt;</description>
-<hole x="2.54" y="-1.27" drill="1.1"/>
 <pad name="INNER" x="0" y="1.27" drill="1.1" shape="offset" rot="R180"/>
 <pad name="OUTER" x="0" y="-3.81" drill="1.1" shape="offset" rot="R180"/>
 <wire x1="-2.78" y1="1.52" x2="2.72" y2="1.52" width="0.127" layer="21"/>
@@ -659,8 +658,12 @@ Rastermaß 5,08 mm</description>
 <wire x1="-2.78" y1="-9.98" x2="-2.78" y2="1.52" width="0.127" layer="21"/>
 <wire x1="-0.635" y1="-3.81" x2="-0.635" y2="-8.255" width="0.127" layer="21"/>
 <wire x1="0.635" y1="-8.255" x2="0.635" y2="-3.81" width="0.127" layer="21" style="longdash"/>
-<wire x1="0.635" y1="-3.81" x2="-0.635" y2="-3.81" width="0.127" layer="21" style="longdash"/>
+<wire x1="0.635" y1="-3.81" x2="0" y2="-3.81" width="0.127" layer="21" style="longdash"/>
+<wire x1="0" y1="-3.81" x2="-0.635" y2="-3.81" width="0.127" layer="21" style="longdash"/>
 <wire x1="0.635" y1="-8.255" x2="-0.635" y2="-8.255" width="0.127" layer="21" curve="-180"/>
+<pad name="SENSE" x="2.54" y="-1.27" drill="1.1"/>
+<wire x1="0" y1="-3.81" x2="0" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1256,12 +1259,13 @@ on the speed of signal transmission.&lt;/p&gt;
 <text x="0" y="-5.08" size="1.778" layer="97" align="center-left">GND</text>
 </symbol>
 <symbol name="DC_JACK">
-<pin name="INNER" x="0" y="2.54" length="middle" direction="pas"/>
-<pin name="OUTER" x="0" y="-2.54" length="middle" direction="pas"/>
-<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="INNER" x="0" y="5.08" length="middle" direction="pas"/>
+<pin name="OUTER" x="0" y="0" length="middle" direction="pas"/>
+<wire x1="-2.54" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<pin name="SENSE" x="0" y="-5.08" length="middle" direction="out"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2111,6 +2115,7 @@ Rastermaß 5,08 mm</description>
 <connects>
 <connect gate="G$1" pin="INNER" pad="INNER"/>
 <connect gate="G$1" pin="OUTER" pad="OUTER"/>
+<connect gate="G$1" pin="SENSE" pad="SENSE"/>
 </connects>
 <technologies>
 <technology name=""/>
