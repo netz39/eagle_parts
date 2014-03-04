@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1764,8 +1764,16 @@ Rastermaß 5,08 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SIBA_194600" prefix="F">
-<description>Fuse</description>
+<deviceset name="PTC-FUSE" prefix="F" uservalue="yes">
+<description>&lt;h1&gt;PTC Fuses&lt;/h1&gt;
+
+This device contains different PTC fuses in different packages. All are &lt;strong&gt;polymeric positive temperature coefficient&lt;/strong&gt; devices (&lt;strong&gt;PPTC&lt;/strong&gt;, commonly known as a &lt;strong&gt;resettable fuse&lt;/strong&gt;, &lt;strong&gt;polyfuse&lt;/strong&gt; or &lt;strong&gt;polyswitch&lt;/strong&gt;). See &lt;a href="https://en.wikipedia.org/wiki/Resettable_fuse"&gt;Wikipedia&lt;/a&gt; for a full explanation.
+
+&lt;h2&gt;Reichelt&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;PTC194600-???&lt;/em&gt; (SMD-1812)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;PTC194700-???&lt;/em&gt; (SMD-2920)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;PFRA ???&lt;/em&gt;&lt;/em&gt; (radial)&lt;/li&gt;</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
