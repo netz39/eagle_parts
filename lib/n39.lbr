@@ -1770,10 +1770,12 @@ Rastermaß 5,08 mm</description>
 This device contains different PTC fuses in different packages. All are &lt;strong&gt;polymeric positive temperature coefficient&lt;/strong&gt; devices (&lt;strong&gt;PPTC&lt;/strong&gt;, commonly known as a &lt;strong&gt;resettable fuse&lt;/strong&gt;, &lt;strong&gt;polyfuse&lt;/strong&gt; or &lt;strong&gt;polyswitch&lt;/strong&gt;). See &lt;a href="https://en.wikipedia.org/wiki/Resettable_fuse"&gt;Wikipedia&lt;/a&gt; for a full explanation.
 
 &lt;h2&gt;Reichelt&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;PTC194600-???&lt;/em&gt; (SMD-1812)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;PTC194700-???&lt;/em&gt; (SMD-2920)&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;PFRA ???&lt;/em&gt;&lt;/em&gt; (radial)&lt;/li&gt;</description>
+&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;Bestellnr.&lt;/th&gt;&lt;th&gt;Package&lt;/th&gt;&lt;th&gt;Datasheet&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;PTC194600-???&lt;/td&gt;&lt;td&gt;SMD-1812&lt;/td&gt;&lt;td&gt;SIBA-194600.pdf&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;PTC194700-???&lt;/td&gt;&lt;td&gt;SMD-2920&lt;/td&gt;&lt;td&gt;–&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;PFRA ???&lt;/td&gt;&lt;td&gt;radial&lt;/td&gt;&lt;td&gt;LP60_?.pdf&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description>
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
