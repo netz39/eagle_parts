@@ -666,7 +666,9 @@ Rastermaß 5,08 mm</description>
 <wire x1="0" y1="-1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
 </package>
 <package name="SRKL">
-<description>&lt;b&gt;SWITCH&lt;/b&gt;</description>
+<description>&lt;h1&gt;SWITCH&lt;/h1&gt;
+
+&lt;p&gt;(Copied from &lt;em&gt;switch-misc&lt;/em&gt;.)&lt;/p&gt;</description>
 <wire x1="-6.223" y1="-8.763" x2="6.223" y2="-8.763" width="0.1524" layer="21"/>
 <wire x1="6.223" y1="8.763" x2="-6.223" y2="8.763" width="0.1524" layer="21"/>
 <wire x1="6.223" y1="-8.509" x2="-6.223" y2="-8.509" width="0.1524" layer="51"/>
@@ -1319,6 +1321,7 @@ on the speed of signal transmission.&lt;/p&gt;
 </polygon>
 </symbol>
 <symbol name="TSU1">
+<description>&lt;p&gt;(Copied from &lt;em&gt;switch-misc&lt;/em&gt;.)&lt;/p&gt;</description>
 <wire x1="0" y1="-2.54" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
 <wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="3.175" width="0.254" layer="94"/>
@@ -1342,6 +1345,7 @@ on the speed of signal transmission.&lt;/p&gt;
 <pin name="P@1" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 <symbol name="KEY-LED">
+<description>&lt;p&gt;(Copied from &lt;em&gt;switch-misc&lt;/em&gt;.)&lt;/p&gt;</description>
 <wire x1="-1.27" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
 <wire x1="0" y1="1.27" x2="0" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
@@ -2217,7 +2221,9 @@ Rastermaß 5,08 mm</description>
 </devices>
 </deviceset>
 <deviceset name="SRKL" prefix="S">
-<description>&lt;b&gt;SWITCH&lt;/b&gt;</description>
+<description>&lt;h1&gt;SWITCH&lt;/h1&gt;
+
+&lt;p&gt;(Copied from &lt;em&gt;switch-misc&lt;/em&gt;.)&lt;/p&gt;</description>
 <gates>
 <gate name="D1" symbol="KEY-LED" x="7.62" y="-2.54" addlevel="always"/>
 <gate name="1" symbol="TSU1" x="0" y="0"/>
