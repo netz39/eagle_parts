@@ -706,6 +706,32 @@ Rastermaß 5,08 mm</description>
 <hole x="3.81" y="7.62" drill="1.1176"/>
 <hole x="-3.81" y="-7.62" drill="1.1176"/>
 </package>
+<package name="LP60-050">
+<pad name="P$1" x="-2.05" y="0.55" drill="0.8"/>
+<wire x1="-3.45" y1="0.5" x2="-2.45" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-2.45" y1="0.5" x2="0.4" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.5" x2="3.45" y2="0.5" width="0.127" layer="21"/>
+<wire x1="3.45" y1="0.5" x2="3.45" y2="-0.5" width="0.127" layer="21" curve="-180"/>
+<wire x1="-3.45" y1="-0.5" x2="-3.45" y2="0.5" width="0.127" layer="21" curve="-180"/>
+<circle x="-2.05" y="0.55" radius="0.3" width="0" layer="51"/>
+<wire x1="0" y1="0.95" x2="-2.05" y2="0.95" width="0.127" layer="21"/>
+<wire x1="-2.05" y1="0.95" x2="-2.45" y2="0.55" width="0.127" layer="21" curve="90"/>
+<wire x1="-2.45" y1="0.55" x2="-2.45" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0" y1="0.95" x2="0.4" y2="0.55" width="0.127" layer="21" curve="-90"/>
+<wire x1="0.4" y1="0.55" x2="0.4" y2="0.5" width="0.127" layer="21"/>
+<pad name="P$2" x="2.05" y="-0.55" drill="0.8" rot="R180"/>
+<wire x1="3.45" y1="-0.5" x2="2.45" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="2.45" y1="-0.5" x2="-0.4" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-0.5" x2="-3.45" y2="-0.5" width="0.127" layer="21"/>
+<circle x="2.05" y="-0.55" radius="0.3" width="0" layer="51"/>
+<wire x1="0" y1="-0.95" x2="2.05" y2="-0.95" width="0.127" layer="21"/>
+<wire x1="2.05" y1="-0.95" x2="2.45" y2="-0.55" width="0.127" layer="21" curve="90"/>
+<wire x1="2.45" y1="-0.55" x2="2.45" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-0.95" x2="-0.4" y2="-0.55" width="0.127" layer="21" curve="-90"/>
+<wire x1="-0.4" y1="-0.55" x2="-0.4" y2="-0.5" width="0.127" layer="21"/>
+<text x="-4.7" y="-2.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.3" y="1.2" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="JS_05_N_K">
@@ -1780,7 +1806,16 @@ This device contains different PTC fuses in different packages. All are &lt;stro
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PTC-FUSE-1812">
+<device name="-SMD-1812" package="PTC-FUSE-1812">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-LP60-050" package="LP60-050">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
