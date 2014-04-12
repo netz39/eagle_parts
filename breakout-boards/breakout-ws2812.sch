@@ -110,9 +110,9 @@
 <description>parts missing @netz39</description>
 <packages>
 <package name="WS2812">
-<smd name="6" x="0" y="0" dx="1.5" dy="1" layer="1"/>
+<smd name="4" x="0" y="0" dx="1.5" dy="1" layer="1"/>
 <smd name="5" x="0" y="-1.6" dx="1.5" dy="1" layer="1"/>
-<smd name="4" x="0" y="-3.2" dx="1.5" dy="1" layer="1"/>
+<smd name="6" x="0" y="-3.2" dx="1.5" dy="1" layer="1"/>
 <smd name="3" x="4.8" y="0" dx="1.5" dy="1" layer="1"/>
 <smd name="2" x="4.8" y="-1.6" dx="1.5" dy="1" layer="1"/>
 <smd name="1" x="4.8" y="-3.2" dx="1.5" dy="1" layer="1"/>
