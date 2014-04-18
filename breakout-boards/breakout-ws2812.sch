@@ -5510,7 +5510,7 @@ Metric Code Size 5664</description>
 <busses>
 </busses>
 <nets>
-<net name="JDD" class="0">
+<net name="VDD" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="VDD"/>
@@ -5521,7 +5521,7 @@ Metric Code Size 5664</description>
 <pinref part="JP3" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="VCC" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
@@ -5564,6 +5564,10 @@ Metric Code Size 5664</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,13.6948,63.5,R1,,,,,"/>
+<approved hash="113,1,39.37,77.8847,C1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
