@@ -2369,7 +2369,7 @@ Rastermaß 5,08 mm</description>
 <gate name="G$1" symbol="NE555" x="60.96" y="-27.94"/>
 </gates>
 <devices>
-<device name="" package="DIL-08">
+<device name="DIL" package="DIL-08">
 <connects>
 <connect gate="G$1" pin="/RES" pad="4"/>
 <connect gate="G$1" pin="CON" pad="5"/>
