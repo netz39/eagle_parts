@@ -2362,7 +2362,7 @@ Rastermaß 5,08 mm</description>
 </devices>
 </deviceset>
 <deviceset name="NE555" prefix="IC">
-<description>&lt;b&gt;General purpose bipolar Timer&lt;/b&gt;
+<description>&lt;h1&gt;General purpose bipolar Timer&lt;/h1&gt;
 
 &lt;p&gt;Copied from st-microelectronics.lbr&lt;/p&gt;</description>
 <gates>
@@ -2386,6 +2386,7 @@ Rastermaß 5,08 mm</description>
 <attribute name="MPN" value="NE555N" constant="no"/>
 <attribute name="OC_FARNELL" value="1467742" constant="no"/>
 <attribute name="OC_NEWARK" value="89K1486" constant="no"/>
+<attribute name="OC_REICHELT" value="NE 555 DIP" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2403,6 +2404,7 @@ Rastermaß 5,08 mm</description>
 <technologies>
 <technology name="">
 <attribute name="MPN" value="NE555D" constant="no"/>
+<attribute name="OC_REICHELT" value="NE 555 D SMD" constant="no"/>
 </technology>
 </technologies>
 </device>
