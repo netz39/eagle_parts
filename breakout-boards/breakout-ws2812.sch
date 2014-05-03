@@ -110,20 +110,20 @@
 <description>parts missing @netz39</description>
 <packages>
 <package name="WS2812">
-<smd name="4" x="0" y="0" dx="1.5" dy="1" layer="1"/>
-<smd name="5" x="0" y="-1.6" dx="1.5" dy="1" layer="1"/>
-<smd name="6" x="0" y="-3.2" dx="1.5" dy="1" layer="1"/>
-<smd name="3" x="4.8" y="0" dx="1.5" dy="1" layer="1"/>
-<smd name="2" x="4.8" y="-1.6" dx="1.5" dy="1" layer="1"/>
-<smd name="1" x="4.8" y="-3.2" dx="1.5" dy="1" layer="1"/>
-<wire x1="-0.1" y1="0.8" x2="4.9" y2="0.8" width="0.127" layer="21"/>
-<wire x1="4.9" y1="0.8" x2="4.9" y2="-3.7" width="0.127" layer="21"/>
-<wire x1="4.9" y1="-3.7" x2="4.9" y2="-4.2" width="0.127" layer="21"/>
-<wire x1="4.9" y1="-4.2" x2="4.4" y2="-4.2" width="0.127" layer="21"/>
-<wire x1="4.4" y1="-4.2" x2="-0.1" y2="-4.2" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-4.2" x2="-0.1" y2="0.8" width="0.127" layer="21"/>
-<text x="1.7" y="0.3" size="1.27" layer="25" rot="R270">2812</text>
-<wire x1="4.9" y1="-3.7" x2="4.4" y2="-4.2" width="0.127" layer="21"/>
+<smd name="4" x="-2.45" y="1.6" dx="1.5" dy="1" layer="1"/>
+<smd name="5" x="-2.45" y="0" dx="1.5" dy="1" layer="1"/>
+<smd name="6" x="-2.45" y="-1.6" dx="1.5" dy="1" layer="1"/>
+<smd name="3" x="2.45" y="1.6" dx="1.5" dy="1" layer="1"/>
+<smd name="2" x="2.45" y="0" dx="1.5" dy="1" layer="1"/>
+<smd name="1" x="2.45" y="-1.6" dx="1.5" dy="1" layer="1"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="2" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<text x="0" y="0" size="1.27" layer="25" rot="R270" align="center">2812</text>
+<wire x1="2.5" y1="-2" x2="2" y2="-2.5" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
