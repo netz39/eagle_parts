@@ -1675,7 +1675,7 @@ Packages:
 </device>
 </devices>
 </deviceset>
-<deviceset name="ASC714" prefix="IC">
+<deviceset name="ACS714" prefix="IC">
 <description>&lt;h1&gt;ACS714&lt;/h1&gt;
 &lt;p&gt;Automotive Grade, Fully Integrated, Hall Effect-Based Linear Current Sensor IC with 2.1 kVRMS Voltage Isolation and a Low-Resistance Current Conductor&lt;/p&gt;
 
