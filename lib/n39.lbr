@@ -1781,6 +1781,53 @@ temperature sensor converts temperatures between
 <pin name="GND" x="0" y="-17.78" visible="off" length="middle" direction="pwr" rot="R90"/>
 <text x="2.54" y="-5.08" size="1.778" layer="94" rot="R90">MCP9808</text>
 </symbol>
+<symbol name="FT232H">
+<description>&lt;h1&gt;FT232H&lt;/h1&gt;
+
+Single Channel Hi-Speed USB to Multipurpose UART/FIFO IC</description>
+<wire x1="-20.32" y1="38.1" x2="35.56" y2="38.1" width="0.254" layer="94"/>
+<wire x1="35.56" y1="38.1" x2="35.56" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="35.56" y1="-40.64" x2="-20.32" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-40.64" x2="-20.32" y2="38.1" width="0.254" layer="94"/>
+<pin name="VCCIO" x="5.08" y="43.18" length="middle" direction="pwr" rot="R270"/>
+<pin name="VPLL" x="-2.54" y="43.18" length="middle" direction="pwr" rot="R270"/>
+<pin name="VPHY" x="-5.08" y="43.18" length="middle" direction="pwr" rot="R270"/>
+<pin name="DM" x="-25.4" y="15.24" length="middle"/>
+<pin name="DP" x="-25.4" y="12.7" length="middle"/>
+<pin name="VREGIN" x="-25.4" y="33.02" length="middle" direction="pwr"/>
+<pin name="VCCD" x="-25.4" y="27.94" length="middle" direction="pwr"/>
+<pin name="REF" x="-25.4" y="-2.54" length="middle"/>
+<pin name="ADBUS0/TXD/TCK/SK" x="40.64" y="33.02" length="middle" rot="R180"/>
+<pin name="ADBUS1/RXT/TDI/DO" x="40.64" y="30.48" length="middle" rot="R180"/>
+<pin name="ADBUS2/!RTS!/TDO/TI" x="40.64" y="27.94" length="middle" rot="R180"/>
+<pin name="ADBUS3/!CTS!/TMS/CS" x="40.64" y="25.4" length="middle" rot="R180"/>
+<pin name="ADBUS4/!DTR!/GPIOL0" x="40.64" y="22.86" length="middle" rot="R180"/>
+<pin name="ADBUS5/!DSR!/GPIOL1" x="40.64" y="20.32" length="middle" rot="R180"/>
+<pin name="ADBUS6/!DCD!/GPIOL2" x="40.64" y="17.78" length="middle" rot="R180"/>
+<pin name="ADBUS7/!RI!/GPIOL3" x="40.64" y="15.24" length="middle" rot="R180"/>
+<pin name="ACBUS0/TXDEN/GPIOH0" x="40.64" y="0" length="middle" rot="R180"/>
+<pin name="ACBUS1/GPIOH1" x="40.64" y="-2.54" length="middle" rot="R180"/>
+<pin name="ACBUS2/GPIOH2" x="40.64" y="-5.08" length="middle" rot="R180"/>
+<pin name="ACBUS3/!RXLED!/GPIOH3" x="40.64" y="-7.62" length="middle" rot="R180"/>
+<pin name="ACBUS4/!TXLED!/GPIOH4" x="40.64" y="-10.16" length="middle" rot="R180"/>
+<pin name="ACBUS5/GPIOH5" x="40.64" y="-12.7" length="middle" rot="R180"/>
+<pin name="ACBUS6/GPIOH6" x="40.64" y="-15.24" length="middle" rot="R180"/>
+<pin name="ACBUS7/!PWRSAV!/GPIOH7" x="40.64" y="-17.78" length="middle" rot="R180"/>
+<pin name="ACBUS8" x="40.64" y="-20.32" length="middle" rot="R180"/>
+<pin name="ACBUS9" x="40.64" y="-22.86" length="middle" rot="R180"/>
+<pin name="!RESET" x="-25.4" y="5.08" length="middle" direction="in"/>
+<pin name="TEST" x="-25.4" y="-35.56" length="middle"/>
+<pin name="AGND" x="-5.08" y="-45.72" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND" x="5.08" y="-45.72" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCCCORE" x="-25.4" y="25.4" length="middle" direction="pwr"/>
+<pin name="VCCA" x="-25.4" y="22.86" length="middle" direction="pwr"/>
+<pin name="EECS" x="-25.4" y="-10.16" length="middle"/>
+<pin name="EECLK" x="-25.4" y="-12.7" length="middle"/>
+<pin name="EEDATA" x="-25.4" y="-15.24" length="middle"/>
+<pin name="XCSI" x="-25.4" y="-22.86" length="middle"/>
+<pin name="XCSO" x="-25.4" y="-27.94" length="middle"/>
+<text x="25.4" y="-38.1" size="1.778" layer="95">FT232H</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JS_05_N_K">
@@ -2839,6 +2886,65 @@ temperature sensor converts temperatures between
 <technologies>
 <technology name="">
 <attribute name="REICHELT" value="MCP 9808-EMS"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FT232H">
+<description>&lt;h1&gt;FT232H/HL&lt;/h1&gt;
+
+
+&lt;p&gt;&lt;a href="http://www.ftdichip.com/Products/ICs/FT232H.htm"&gt;http://www.ftdichip.com/Products/ICs/FT232H.htm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The FT232H is a single channel USB 2.0 Hi-Speed (480Mb/s) to UART/FIFO IC. It has the capability of being configured in a variety of industry standard serial or parallel interfaces.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FT232H" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LQFP48">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="34"/>
+<connect gate="G$1" pin="ACBUS0/TXDEN/GPIOH0" pad="21"/>
+<connect gate="G$1" pin="ACBUS1/GPIOH1" pad="25"/>
+<connect gate="G$1" pin="ACBUS2/GPIOH2" pad="26"/>
+<connect gate="G$1" pin="ACBUS3/!RXLED!/GPIOH3" pad="27"/>
+<connect gate="G$1" pin="ACBUS4/!TXLED!/GPIOH4" pad="28"/>
+<connect gate="G$1" pin="ACBUS5/GPIOH5" pad="29"/>
+<connect gate="G$1" pin="ACBUS6/GPIOH6" pad="30"/>
+<connect gate="G$1" pin="ACBUS7/!PWRSAV!/GPIOH7" pad="31"/>
+<connect gate="G$1" pin="ACBUS8" pad="32"/>
+<connect gate="G$1" pin="ACBUS9" pad="33"/>
+<connect gate="G$1" pin="ADBUS0/TXD/TCK/SK" pad="13"/>
+<connect gate="G$1" pin="ADBUS1/RXT/TDI/DO" pad="14"/>
+<connect gate="G$1" pin="ADBUS2/!RTS!/TDO/TI" pad="15"/>
+<connect gate="G$1" pin="ADBUS3/!CTS!/TMS/CS" pad="16"/>
+<connect gate="G$1" pin="ADBUS4/!DTR!/GPIOL0" pad="17"/>
+<connect gate="G$1" pin="ADBUS5/!DSR!/GPIOL1" pad="18"/>
+<connect gate="G$1" pin="ADBUS6/!DCD!/GPIOL2" pad="19"/>
+<connect gate="G$1" pin="ADBUS7/!RI!/GPIOL3" pad="20"/>
+<connect gate="G$1" pin="AGND" pad="4 9 41"/>
+<connect gate="G$1" pin="DM" pad="6"/>
+<connect gate="G$1" pin="DP" pad="7"/>
+<connect gate="G$1" pin="EECLK" pad="44"/>
+<connect gate="G$1" pin="EECS" pad="45"/>
+<connect gate="G$1" pin="EEDATA" pad="43"/>
+<connect gate="G$1" pin="GND" pad="10 11 22 23 35 36 47 48"/>
+<connect gate="G$1" pin="REF" pad="5"/>
+<connect gate="G$1" pin="TEST" pad="42"/>
+<connect gate="G$1" pin="VCCA" pad="37"/>
+<connect gate="G$1" pin="VCCCORE" pad="38"/>
+<connect gate="G$1" pin="VCCD" pad="39"/>
+<connect gate="G$1" pin="VCCIO" pad="12 24 46"/>
+<connect gate="G$1" pin="VPHY" pad="3"/>
+<connect gate="G$1" pin="VPLL" pad="8"/>
+<connect gate="G$1" pin="VREGIN" pad="40"/>
+<connect gate="G$1" pin="XCSI" pad="1"/>
+<connect gate="G$1" pin="XCSO" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="REICHELT" value="FT 232 HL"/>
 </technology>
 </technologies>
 </device>
