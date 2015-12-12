@@ -3057,6 +3057,41 @@ temperature sensor converts temperatures between
 </device>
 </devices>
 </deviceset>
+<deviceset name="RV2123-C2" prefix="U">
+<description>&lt;h1&gt;RV 2123-C2: Real Time Clock Module with SPI Bus&lt;/h1&gt;
+&lt;p&gt;This RTC IC has been specially designed to achieve an ultra-low power
+consumption of typically 130nA @ VDD 3.0V in time-keeping mode.
+The very small SMT ceramic-package combines the 32.768 kHz crystal
+unit with the CMOS-based oscillator and real-time-clock circuitry.
+The calendar function tracks year, month, date, and day-of-the-week with
+built-in century and leap-year flags. The clock function tracks minute and
+second in 24-hour format. Programmable alarm setting and universal
+timer functions increase flexibility.&lt;/p&gt;
+&lt;p&gt;This parts comes with visible VCC and GND pins to facilitate battery-backup schematics.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RV-2123-C2" x="12.7" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="SON_10-PIN">
+<connects>
+<connect gate="G$1" pin="!INT" pad="P.8"/>
+<connect gate="G$1" pin="CE" pad="P.7"/>
+<connect gate="G$1" pin="CLKOE" pad="P.10"/>
+<connect gate="G$1" pin="CLKOUT" pad="P.2"/>
+<connect gate="G$1" pin="GND" pad="P.6"/>
+<connect gate="G$1" pin="SCL" pad="P.3"/>
+<connect gate="G$1" pin="SDI" pad="P.4"/>
+<connect gate="G$1" pin="SDO" pad="P.5"/>
+<connect gate="G$1" pin="VCC" pad="P.1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="REICHELT" value="RV 2123-C2" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
