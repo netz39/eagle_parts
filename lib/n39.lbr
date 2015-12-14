@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1066,6 +1066,29 @@ www.fma.fujitsu.com/pdf/e713717.pdf</description>
 <text x="-5.08" y="-7.62" size="1.27" layer="25" rot="R90" align="top-left">&gt;NAME</text>
 <text x="5.08" y="-7.62" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
+<package name="SON_10-PIN">
+<description>&lt;h1&gt;SON 10 pin&lt;/h1&gt;
+
+10 pin ceramic package as found in RV--2123-C2 and similar parts.</description>
+<wire x1="-2.5" y1="-1.6" x2="2.5" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="-1.6" x2="2.5" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="1.6" x2="-2.5" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="1.6" x2="-2.5" y2="-1.6" width="0.2032" layer="21"/>
+<circle x="-2" y="-0.65" radius="0.25" width="0.2032" layer="21"/>
+<smd name="P.10" x="-2" y="1.55" dx="0.6" dy="0.9" layer="1"/>
+<smd name="P.9" x="-1" y="1.55" dx="0.6" dy="0.9" layer="1"/>
+<smd name="P.8" x="0" y="1.55" dx="0.6" dy="0.9" layer="1"/>
+<smd name="P.7" x="1" y="1.55" dx="0.6" dy="0.9" layer="1"/>
+<smd name="P.6" x="2" y="1.55" dx="0.6" dy="0.9" layer="1"/>
+<smd name="P.1" x="-2" y="-1.55" dx="0.6" dy="0.9" layer="1" rot="R180"/>
+<smd name="P.2" x="-1" y="-1.55" dx="0.6" dy="0.9" layer="1" rot="R180"/>
+<smd name="P.3" x="0" y="-1.55" dx="0.6" dy="0.9" layer="1" rot="R180"/>
+<smd name="P.4" x="1" y="-1.55" dx="0.6" dy="0.9" layer="1" rot="R180"/>
+<smd name="P.5" x="2" y="-1.55" dx="0.6" dy="0.9" layer="1" rot="R180"/>
+<text x="-1.246" y="-0.25" size="0.6096" layer="25" font="vector">&gt;Name</text>
+<text x="-1.27" y="-0.916" size="0.4064" layer="27" font="vector">&gt;Value</text>
+<rectangle x1="-2.7" y1="-1.8" x2="2.7" y2="1.8" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JS_05_N_K">
@@ -1869,6 +1892,26 @@ Single Channel Hi-Speed USB to Multipurpose UART/FIFO IC</description>
 <text x="-1.27" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="+" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="-" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+</symbol>
+<symbol name="RV-2123-C2">
+<description>&lt;h1&gt;RV 2123-C2: Real Time Clock Module with SPI bus&lt;/h1&gt;
+
+&lt;p&gt;VCC and GND are kept visible to facilitate buffer battery connections.&lt;/p&gt;</description>
+<pin name="CLKOUT" x="-30.48" y="10.16" length="middle" direction="oc"/>
+<pin name="CLKOE" x="-30.48" y="15.24" length="middle" direction="in"/>
+<pin name="!INT" x="-30.48" y="-2.54" length="middle" direction="oc"/>
+<pin name="CE" x="5.08" y="15.24" length="middle" direction="in" rot="R180"/>
+<pin name="SCL" x="5.08" y="7.62" length="middle" direction="hiz" rot="R180"/>
+<pin name="SDI" x="5.08" y="2.54" length="middle" direction="hiz" rot="R180"/>
+<pin name="SDO" x="5.08" y="-2.54" length="middle" direction="hiz" rot="R180"/>
+<pin name="GND" x="-12.7" y="-12.7" length="middle" direction="pwr" rot="R90"/>
+<pin name="VDD" x="-12.7" y="25.4" length="middle" direction="pwr" rot="R270"/>
+<wire x1="-25.4" y1="20.32" x2="0" y2="20.32" width="0.254" layer="94"/>
+<wire x1="0" y1="20.32" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="-25.4" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-7.62" x2="-25.4" y2="20.32" width="0.254" layer="94"/>
+<text x="-6.35" y="-10.16" size="1.27" layer="95">&gt;Name</text>
+<text x="-24.13" y="-10.16" size="1.27" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3012,6 +3055,41 @@ temperature sensor converts temperatures between
 <technologies>
 <technology name="">
 <attribute name="REICHELT" value="KZH 20-1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RV2123-C2" prefix="U">
+<description>&lt;h1&gt;RV 2123-C2: Real Time Clock Module with SPI Bus&lt;/h1&gt;
+&lt;p&gt;This RTC IC has been specially designed to achieve an ultra-low power
+consumption of typically 130nA @ VDD 3.0V in time-keeping mode.
+The very small SMT ceramic-package combines the 32.768 kHz crystal
+unit with the CMOS-based oscillator and real-time-clock circuitry.
+The calendar function tracks year, month, date, and day-of-the-week with
+built-in century and leap-year flags. The clock function tracks minute and
+second in 24-hour format. Programmable alarm setting and universal
+timer functions increase flexibility.&lt;/p&gt;
+&lt;p&gt;This parts comes with visible VCC and GND pins to facilitate battery-backup schematics.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RV-2123-C2" x="12.7" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="SON_10-PIN">
+<connects>
+<connect gate="G$1" pin="!INT" pad="P.8"/>
+<connect gate="G$1" pin="CE" pad="P.7"/>
+<connect gate="G$1" pin="CLKOE" pad="P.10"/>
+<connect gate="G$1" pin="CLKOUT" pad="P.2"/>
+<connect gate="G$1" pin="GND" pad="P.6"/>
+<connect gate="G$1" pin="SCL" pad="P.3"/>
+<connect gate="G$1" pin="SDI" pad="P.4"/>
+<connect gate="G$1" pin="SDO" pad="P.5"/>
+<connect gate="G$1" pin="VDD" pad="P.1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="REICHELT" value="RV 2123-C2" constant="no"/>
 </technology>
 </technologies>
 </device>
