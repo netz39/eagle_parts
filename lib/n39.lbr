@@ -1900,15 +1900,15 @@ Single Channel Hi-Speed USB to Multipurpose UART/FIFO IC</description>
 <description>&lt;h1&gt;RV 2123-C2: Real Time Clock Module with SPI bus&lt;/h1&gt;
 
 &lt;p&gt;VCC and GND are kept visible to facilitate buffer battery connections.&lt;/p&gt;</description>
-<pin name="CLKOUT" x="-30.48" y="10.16" length="middle" direction="oc"/>
-<pin name="CLKOE" x="-30.48" y="15.24" length="middle" direction="in"/>
-<pin name="!INT" x="-30.48" y="-2.54" length="middle" direction="oc"/>
-<pin name="CE" x="5.08" y="15.24" length="middle" direction="in" rot="R180"/>
-<pin name="SCL" x="5.08" y="7.62" length="middle" direction="hiz" rot="R180"/>
-<pin name="SDI" x="5.08" y="2.54" length="middle" direction="hiz" rot="R180"/>
-<pin name="SDO" x="5.08" y="-2.54" length="middle" direction="hiz" rot="R180"/>
-<pin name="GND" x="-12.7" y="-12.7" length="middle" direction="pwr" rot="R90"/>
-<pin name="VDD" x="-12.7" y="25.4" length="middle" direction="pwr" rot="R270"/>
+<pin name="CLKOUT" x="-30.48" y="10.16" visible="pin" length="middle" direction="oc"/>
+<pin name="CLKOE" x="-30.48" y="15.24" visible="pin" length="middle" direction="in"/>
+<pin name="!INT" x="-30.48" y="-2.54" visible="pin" length="middle" direction="oc"/>
+<pin name="CE" x="5.08" y="15.24" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="SCL" x="5.08" y="7.62" visible="pin" length="middle" direction="hiz" rot="R180"/>
+<pin name="SDI" x="5.08" y="2.54" visible="pin" length="middle" direction="hiz" rot="R180"/>
+<pin name="SDO" x="5.08" y="-2.54" visible="pin" length="middle" direction="hiz" rot="R180"/>
+<pin name="GND" x="-12.7" y="-12.7" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="VDD" x="-12.7" y="25.4" visible="pin" length="middle" direction="pwr" rot="R270"/>
 <wire x1="-25.4" y1="20.32" x2="0" y2="20.32" width="0.254" layer="94"/>
 <wire x1="0" y1="20.32" x2="0" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="0" y1="-7.62" x2="-25.4" y2="-7.62" width="0.254" layer="94"/>
@@ -3063,7 +3063,7 @@ temperature sensor converts temperatures between
 </device>
 </devices>
 </deviceset>
-<deviceset name="RV2123-C2" prefix="U">
+<deviceset name="RV2123-C2" prefix="IC">
 <description>&lt;h1&gt;RV 2123-C2: Real Time Clock Module with SPI Bus&lt;/h1&gt;
 &lt;p&gt;This RTC IC has been specially designed to achieve an ultra-low power
 consumption of typically 130nA @ VDD 3.0V in time-keeping mode.
