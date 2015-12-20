@@ -3063,7 +3063,7 @@ temperature sensor converts temperatures between
 </device>
 </devices>
 </deviceset>
-<deviceset name="RV2123-C2" prefix="U">
+<deviceset name="RV2123-C2" prefix="IC">
 <description>&lt;h1&gt;RV 2123-C2: Real Time Clock Module with SPI Bus&lt;/h1&gt;
 &lt;p&gt;This RTC IC has been specially designed to achieve an ultra-low power
 consumption of typically 130nA @ VDD 3.0V in time-keeping mode.
