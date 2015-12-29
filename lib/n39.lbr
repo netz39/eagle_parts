@@ -1096,7 +1096,10 @@ www.fma.fujitsu.com/pdf/e713717.pdf</description>
 <package name="16X9.5TRF">
 <description>&lt;h1&gt;NEXC Series Capacitor 16x9.5mm Package&lt;/h1&gt;
 
-Datasheet: https://www.reichelt.de/index.html?&amp;ACTION=7&amp;LA=3&amp;OPEN=0&amp;INDEX=0&amp;FILENAME=B300%252FDB_NIC_GOLDCAPS.pdf</description>
+&lt;p&gt;
+Datasheet:
+&lt;a href="http://cdn-reichelt.de/documents/datenblatt/B300/DB_NIC_GOLDCAPS.pdf"&gt;http://cdn-reichelt.de/documents/datenblatt/B300/DB_NIC_GOLDCAPS.pdf&lt;/a&gt;
+&lt;/p&gt;</description>
 <wire x1="-4.75" y1="-8.15" x2="8.15" y2="-8.15" width="0.127" layer="21"/>
 <wire x1="8.15" y1="-8.15" x2="8.15" y2="8.15" width="0.127" layer="21"/>
 <wire x1="8.15" y1="8.15" x2="-4.75" y2="8.15" width="0.127" layer="21"/>
@@ -3138,7 +3141,10 @@ timer functions increase flexibility.&lt;/p&gt;
 <deviceset name="GOLDCAP" prefix="C" uservalue="yes">
 <description>&lt;h1&gt;GoldCap capacitance&lt;/h1&gt;
 
-&lt;p&gt;Generic part for gold caps, such as https://www.reichelt.de/index.html?&amp;ARTICLE=111711.&lt;/p&gt;
+&lt;p&gt;
+Generic part for gold caps, such as &lt;a href="https://www.reichelt.de/index.html?&amp;ARTICLE=111711"&gt;Reichelt SMD GC 0,47/5,5&lt;/a&gt;.
+&lt;/p&gt;
+
 
 &lt;p&gt;&lt;b&gt;Make sure to select the correct package for your device. There is no assignment in this part to keep the number of variants down.&lt;/b&gt;&lt;/p&gt;</description>
 <gates>
